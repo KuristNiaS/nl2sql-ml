@@ -1,0 +1,1593 @@
+{
+  "status": "passed",
+  "range": [
+    1,
+    200
+  ],
+  "passed_in_this_run": 200,
+  "total_suite_cases": 200,
+  "details": [
+    {
+      "number": 1,
+      "id": "adv-001",
+      "status": "passed",
+      "table": "Student_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 2,
+      "id": "adv-002",
+      "status": "passed",
+      "table": "Student_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 3,
+      "id": "adv-003",
+      "status": "passed",
+      "table": "Student_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 4,
+      "id": "adv-004",
+      "status": "passed",
+      "table": "Student_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 5,
+      "id": "adv-005",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 6,
+      "id": "adv-006",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 7,
+      "id": "adv-007",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 8,
+      "id": "adv-008",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 9,
+      "id": "adv-009",
+      "status": "passed",
+      "table": "Study_Class_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 10,
+      "id": "adv-010",
+      "status": "passed",
+      "table": "Study_Class_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 11,
+      "id": "adv-011",
+      "status": "passed",
+      "table": "Study_Class_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 12,
+      "id": "adv-012",
+      "status": "passed",
+      "table": "Study_Class_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 13,
+      "id": "adv-013",
+      "status": "passed",
+      "table": "Exam_Apply",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 14,
+      "id": "adv-014",
+      "status": "passed",
+      "table": "Exam_Apply",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 15,
+      "id": "adv-015",
+      "status": "passed",
+      "table": "Exam_Apply",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 16,
+      "id": "adv-016",
+      "status": "passed",
+      "table": "Exam_Apply",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 17,
+      "id": "adv-017",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 18,
+      "id": "adv-018",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 19,
+      "id": "adv-019",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 20,
+      "id": "adv-020",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 21,
+      "id": "adv-021",
+      "status": "passed",
+      "table": "News_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 22,
+      "id": "adv-022",
+      "status": "passed",
+      "table": "News_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 23,
+      "id": "adv-023",
+      "status": "passed",
+      "table": "News_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 24,
+      "id": "adv-024",
+      "status": "passed",
+      "table": "News_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 25,
+      "id": "adv-025",
+      "status": "passed",
+      "table": "BBSReplayInfo",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 26,
+      "id": "adv-026",
+      "status": "passed",
+      "table": "BBSReplayInfo",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 27,
+      "id": "adv-027",
+      "status": "passed",
+      "table": "BBSReplayInfo",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 28,
+      "id": "adv-028",
+      "status": "passed",
+      "table": "BBSReplayInfo",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 29,
+      "id": "adv-029",
+      "status": "passed",
+      "table": "Sys_Mail_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 30,
+      "id": "adv-030",
+      "status": "passed",
+      "table": "Sys_Mail_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 31,
+      "id": "adv-031",
+      "status": "passed",
+      "table": "Sys_Mail_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 32,
+      "id": "adv-032",
+      "status": "passed",
+      "table": "Sys_Mail_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 33,
+      "id": "adv-033",
+      "status": "passed",
+      "table": "Evaluation",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 34,
+      "id": "adv-034",
+      "status": "passed",
+      "table": "Evaluation",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 35,
+      "id": "adv-035",
+      "status": "passed",
+      "table": "Evaluation",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 36,
+      "id": "adv-036",
+      "status": "passed",
+      "table": "Evaluation",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 37,
+      "id": "adv-037",
+      "status": "passed",
+      "table": "Skill_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 38,
+      "id": "adv-038",
+      "status": "passed",
+      "table": "Skill_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 39,
+      "id": "adv-039",
+      "status": "passed",
+      "table": "Skill_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 40,
+      "id": "adv-040",
+      "status": "passed",
+      "table": "Skill_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 41,
+      "id": "adv-041",
+      "status": "passed",
+      "table": "Department",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 42,
+      "id": "adv-042",
+      "status": "passed",
+      "table": "Department",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 43,
+      "id": "adv-043",
+      "status": "passed",
+      "table": "Department",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 44,
+      "id": "adv-044",
+      "status": "passed",
+      "table": "Duty_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 45,
+      "id": "adv-045",
+      "status": "passed",
+      "table": "Duty_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 46,
+      "id": "adv-046",
+      "status": "passed",
+      "table": "Duty_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 47,
+      "id": "adv-047",
+      "status": "passed",
+      "table": "tk_tkj",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 48,
+      "id": "adv-048",
+      "status": "passed",
+      "table": "tk_tkj",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 49,
+      "id": "adv-049",
+      "status": "passed",
+      "table": "tk_tkj",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 50,
+      "id": "adv-050",
+      "status": "passed",
+      "table": "BBSTopicInfo",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 51,
+      "id": "adv-051",
+      "status": "passed",
+      "table": "BBSTopicInfo",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 52,
+      "id": "adv-052",
+      "status": "passed",
+      "table": "BBSTopicInfo",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 53,
+      "id": "adv-053",
+      "status": "passed",
+      "table": "Role_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 54,
+      "id": "adv-054",
+      "status": "passed",
+      "table": "Role_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 55,
+      "id": "adv-055",
+      "status": "passed",
+      "table": "Role_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 56,
+      "id": "adv-056",
+      "status": "passed",
+      "table": "Sys_Access_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 57,
+      "id": "adv-057",
+      "status": "passed",
+      "table": "Sys_Access_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 58,
+      "id": "adv-058",
+      "status": "passed",
+      "table": "Sys_Access_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 59,
+      "id": "adv-059",
+      "status": "passed",
+      "table": "GameArrangeInfo",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 60,
+      "id": "adv-060",
+      "status": "passed",
+      "table": "GameArrangeInfo",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 61,
+      "id": "adv-061",
+      "status": "passed",
+      "table": "GameArrangeInfo",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 62,
+      "id": "adv-062",
+      "status": "passed",
+      "table": "Skill_Level_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 63,
+      "id": "adv-063",
+      "status": "passed",
+      "table": "Skill_Level_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 64,
+      "id": "adv-064",
+      "status": "passed",
+      "table": "Skill_Level_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 65,
+      "id": "adv-065",
+      "status": "passed",
+      "table": "Certificate_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 66,
+      "id": "adv-066",
+      "status": "passed",
+      "table": "Certificate_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 67,
+      "id": "adv-067",
+      "status": "passed",
+      "table": "Certificate_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 68,
+      "id": "adv-068",
+      "status": "passed",
+      "table": "OffTrain_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 69,
+      "id": "adv-069",
+      "status": "passed",
+      "table": "OffTrain_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 70,
+      "id": "adv-070",
+      "status": "passed",
+      "table": "OffTrain_Info",
+      "intent": "count",
+      "report_type": null
+    },
+    {
+      "number": 71,
+      "id": "adv-071",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 72,
+      "id": "adv-072",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 73,
+      "id": "adv-073",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 74,
+      "id": "adv-074",
+      "status": "passed",
+      "table": "Study_Class_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 75,
+      "id": "adv-075",
+      "status": "passed",
+      "table": "Study_Class_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 76,
+      "id": "adv-076",
+      "status": "passed",
+      "table": "Study_Class_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 77,
+      "id": "adv-077",
+      "status": "passed",
+      "table": "Exam_Apply",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 78,
+      "id": "adv-078",
+      "status": "passed",
+      "table": "Exam_Apply",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 79,
+      "id": "adv-079",
+      "status": "passed",
+      "table": "Exam_Apply",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 80,
+      "id": "adv-080",
+      "status": "passed",
+      "table": "News_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 81,
+      "id": "adv-081",
+      "status": "passed",
+      "table": "News_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 82,
+      "id": "adv-082",
+      "status": "passed",
+      "table": "News_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 83,
+      "id": "adv-083",
+      "status": "passed",
+      "table": "User_Option_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 84,
+      "id": "adv-084",
+      "status": "passed",
+      "table": "User_Option_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 85,
+      "id": "adv-085",
+      "status": "passed",
+      "table": "User_Option_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 86,
+      "id": "adv-086",
+      "status": "passed",
+      "table": "Evaluation_Result",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 87,
+      "id": "adv-087",
+      "status": "passed",
+      "table": "Evaluation_Result",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 88,
+      "id": "adv-088",
+      "status": "passed",
+      "table": "Evaluation_Result",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 89,
+      "id": "adv-089",
+      "status": "passed",
+      "table": "GameStudentInfo",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 90,
+      "id": "adv-090",
+      "status": "passed",
+      "table": "GameStudentInfo",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 91,
+      "id": "adv-091",
+      "status": "passed",
+      "table": "GameStudentInfo",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 92,
+      "id": "adv-092",
+      "status": "passed",
+      "table": "Student_Skill_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 93,
+      "id": "adv-093",
+      "status": "passed",
+      "table": "Student_Skill_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 94,
+      "id": "adv-094",
+      "status": "passed",
+      "table": "Student_Skill_Info",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 95,
+      "id": "adv-095",
+      "status": "passed",
+      "table": "tk001",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 96,
+      "id": "adv-096",
+      "status": "passed",
+      "table": "tk001",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 97,
+      "id": "adv-097",
+      "status": "passed",
+      "table": "tk001",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 98,
+      "id": "adv-098",
+      "status": "passed",
+      "table": "Department",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 99,
+      "id": "adv-099",
+      "status": "passed",
+      "table": "Department",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 100,
+      "id": "adv-100",
+      "status": "passed",
+      "table": "Department",
+      "intent": "group_aggregate",
+      "report_type": null
+    },
+    {
+      "number": 101,
+      "id": "adv-101",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 102,
+      "id": "adv-102",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 103,
+      "id": "adv-103",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 104,
+      "id": "adv-104",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 105,
+      "id": "adv-105",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 106,
+      "id": "adv-106",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 107,
+      "id": "adv-107",
+      "status": "passed",
+      "table": "Student_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 108,
+      "id": "adv-108",
+      "status": "passed",
+      "table": "Student_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 109,
+      "id": "adv-109",
+      "status": "passed",
+      "table": "Student_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 110,
+      "id": "adv-110",
+      "status": "passed",
+      "table": "Student_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 111,
+      "id": "adv-111",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 112,
+      "id": "adv-112",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 113,
+      "id": "adv-113",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 114,
+      "id": "adv-114",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 115,
+      "id": "adv-115",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 116,
+      "id": "adv-116",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "top_n",
+      "report_type": null
+    },
+    {
+      "number": 117,
+      "id": "adv-117",
+      "status": "passed",
+      "table": "Exam_Apply",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 118,
+      "id": "adv-118",
+      "status": "passed",
+      "table": "Exam_Apply",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 119,
+      "id": "adv-119",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 120,
+      "id": "adv-120",
+      "status": "passed",
+      "table": "Course_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 121,
+      "id": "adv-121",
+      "status": "passed",
+      "table": "Study_Class_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 122,
+      "id": "adv-122",
+      "status": "passed",
+      "table": "Study_Class_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 123,
+      "id": "adv-123",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 124,
+      "id": "adv-124",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 125,
+      "id": "adv-125",
+      "status": "passed",
+      "table": "News_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 126,
+      "id": "adv-126",
+      "status": "passed",
+      "table": "News_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 127,
+      "id": "adv-127",
+      "status": "passed",
+      "table": "Duty_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 128,
+      "id": "adv-128",
+      "status": "passed",
+      "table": "Duty_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 129,
+      "id": "adv-129",
+      "status": "passed",
+      "table": "Evaluation",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 130,
+      "id": "adv-130",
+      "status": "passed",
+      "table": "Evaluation",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 131,
+      "id": "adv-131",
+      "status": "passed",
+      "table": "Skill_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 132,
+      "id": "adv-132",
+      "status": "passed",
+      "table": "Skill_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 133,
+      "id": "adv-133",
+      "status": "passed",
+      "table": "Exam_Apply",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 134,
+      "id": "adv-134",
+      "status": "passed",
+      "table": "Exam_Apply",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 135,
+      "id": "adv-135",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 136,
+      "id": "adv-136",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 137,
+      "id": "adv-137",
+      "status": "passed",
+      "table": "Student_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 138,
+      "id": "adv-138",
+      "status": "passed",
+      "table": "Student_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 139,
+      "id": "adv-139",
+      "status": "passed",
+      "table": "Study_Class_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 140,
+      "id": "adv-140",
+      "status": "passed",
+      "table": "Study_Class_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 141,
+      "id": "adv-141",
+      "status": "passed",
+      "table": "Student_Skill_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 142,
+      "id": "adv-142",
+      "status": "passed",
+      "table": "Student_Skill_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 143,
+      "id": "adv-143",
+      "status": "passed",
+      "table": "Student_Course_Log",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 144,
+      "id": "adv-144",
+      "status": "passed",
+      "table": "Student_Course_Log",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 145,
+      "id": "adv-145",
+      "status": "passed",
+      "table": "Student_Point_Log",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 146,
+      "id": "adv-146",
+      "status": "passed",
+      "table": "Student_Point_Log",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 147,
+      "id": "adv-147",
+      "status": "passed",
+      "table": "Student_Courseware_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 148,
+      "id": "adv-148",
+      "status": "passed",
+      "error": "ValueError: “课件学习记录”在设计书中存在两种口径：Student_Courseware_Info学员课件汇总记录，以及Courseware_Login_Info课件学习会话；请明确需要哪一种"
+    },
+    {
+      "number": 149,
+      "id": "adv-149",
+      "status": "passed",
+      "table": "Study_Class_Apply_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 150,
+      "id": "adv-150",
+      "status": "passed",
+      "table": "Study_Class_Apply_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 151,
+      "id": "adv-151",
+      "status": "passed",
+      "table": "Student_Skill_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 152,
+      "id": "adv-152",
+      "status": "passed",
+      "table": "Student_Skill_Info",
+      "intent": "list",
+      "report_type": null
+    },
+    {
+      "number": 153,
+      "id": "adv-153",
+      "status": "passed",
+      "table": "Student_Course_Log",
+      "intent": "cross_tab",
+      "report_type": "department_monthly_per_capita_learning_hours"
+    },
+    {
+      "number": 154,
+      "id": "adv-154",
+      "status": "passed",
+      "table": "Student_Course_Log",
+      "intent": "cross_tab",
+      "report_type": "department_monthly_per_capita_learning_hours"
+    },
+    {
+      "number": 155,
+      "id": "adv-155",
+      "status": "passed",
+      "table": "Student_Course_Log",
+      "intent": "cross_tab",
+      "report_type": "department_monthly_per_capita_learning_hours"
+    },
+    {
+      "number": 156,
+      "id": "adv-156",
+      "status": "passed",
+      "table": "Student_Course_Log",
+      "intent": "cross_tab",
+      "report_type": "department_monthly_per_capita_learning_hours"
+    },
+    {
+      "number": 157,
+      "id": "adv-157",
+      "status": "passed",
+      "table": "Student_Course_Log",
+      "intent": "cross_tab",
+      "report_type": "department_monthly_per_capita_learning_hours"
+    },
+    {
+      "number": 158,
+      "id": "adv-158",
+      "status": "passed",
+      "table": "Student_Course_Log",
+      "intent": "cross_tab",
+      "report_type": "department_monthly_per_capita_learning_hours"
+    },
+    {
+      "number": 159,
+      "id": "adv-159",
+      "status": "passed",
+      "table": "Student_Course_Log",
+      "intent": "cross_tab",
+      "report_type": "department_monthly_per_capita_learning_hours"
+    },
+    {
+      "number": 160,
+      "id": "adv-160",
+      "status": "passed",
+      "table": "Student_Course_Log",
+      "intent": "cross_tab",
+      "report_type": "department_monthly_per_capita_learning_hours"
+    },
+    {
+      "number": 161,
+      "id": "adv-161",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 162,
+      "id": "adv-162",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 163,
+      "id": "adv-163",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 164,
+      "id": "adv-164",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 165,
+      "id": "adv-165",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 166,
+      "id": "adv-166",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 167,
+      "id": "adv-167",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 168,
+      "id": "adv-168",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 169,
+      "id": "adv-169",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 170,
+      "id": "adv-170",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 171,
+      "id": "adv-171",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 172,
+      "id": "adv-172",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 173,
+      "id": "adv-173",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 174,
+      "id": "adv-174",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 175,
+      "id": "adv-175",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 176,
+      "id": "adv-176",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "group_aggregate",
+      "report_type": "student_exam_score_aggregate"
+    },
+    {
+      "number": 177,
+      "id": "adv-177",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 178,
+      "id": "adv-178",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 179,
+      "id": "adv-179",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 180,
+      "id": "adv-180",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 181,
+      "id": "adv-181",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 182,
+      "id": "adv-182",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 183,
+      "id": "adv-183",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 184,
+      "id": "adv-184",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 185,
+      "id": "adv-185",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 186,
+      "id": "adv-186",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 187,
+      "id": "adv-187",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 188,
+      "id": "adv-188",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 189,
+      "id": "adv-189",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 190,
+      "id": "adv-190",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 191,
+      "id": "adv-191",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 192,
+      "id": "adv-192",
+      "status": "passed",
+      "table": "clerk_kscj",
+      "intent": "top_n",
+      "report_type": "student_exam_score_ranking"
+    },
+    {
+      "number": 193,
+      "id": "adv-193",
+      "status": "passed",
+      "error": "ValueError: 设计书中的Student_Info学员表没有专业字段，无法按“数学专业”筛选学生；请确认专业存储字段或改用部门等已定义维度"
+    },
+    {
+      "number": 194,
+      "id": "adv-194",
+      "status": "passed",
+      "error": "ValueError: 这是复合分析/报表口径，当前没有匹配到已审核的KPI规则；为避免生成错误SQL，已拒绝退化为普通计数查询"
+    },
+    {
+      "number": 195,
+      "id": "adv-195",
+      "status": "passed",
+      "error": "ValueError: 识别到多名学员和成绩指标，但没有明确是分别统计还是合并统计"
+    },
+    {
+      "number": 196,
+      "id": "adv-196",
+      "status": "passed",
+      "error": "ValueError: 识别到筛选实体“张三创建”，但没有安全、明确的关联路径"
+    },
+    {
+      "number": 197,
+      "id": "adv-197",
+      "status": "passed",
+      "error": "ValueError: 目标事实表无法可靠识别，已拒绝生成SQL；请补充业务对象、指标口径或使用已审核语义视图"
+    },
+    {
+      "number": 198,
+      "id": "adv-198",
+      "status": "passed",
+      "error": "ValueError: 设计书中的Student_Info学员表没有年级字段，无法按“一年级”筛选学生；请确认年级存储字段或改用部门等已定义维度"
+    },
+    {
+      "number": 199,
+      "id": "adv-199",
+      "status": "passed",
+      "error": "ValueError: 设计书中的Student_Info学员表没有学院字段，无法按“软件学院”筛选学生；请确认学院存储字段或改用部门等已定义维度"
+    },
+    {
+      "number": 200,
+      "id": "adv-200",
+      "status": "passed",
+      "error": "ValueError: 设计书中的Student_Info学员表没有班级字段，无法按“三班”筛选学生；请确认班级存储字段或改用部门等已定义维度"
+    }
+  ]
+}

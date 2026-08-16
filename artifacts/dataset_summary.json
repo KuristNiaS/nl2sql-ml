@@ -1,0 +1,45 @@
+{
+  "samples": 72000,
+  "base_samples": 60000,
+  "specialized_report_samples": 12000,
+  "monthly_report_samples": 4000,
+  "compositional_exam_score_samples": 4000,
+  "exam_score_ranking_samples": 4000,
+  "tables_covered": 111,
+  "base_table_min_samples": 540,
+  "base_table_max_samples": 541,
+  "table_min_samples": 540,
+  "table_max_samples": 8541,
+  "intents": {
+    "list": 11428,
+    "count": 13537,
+    "aggregate": 7338,
+    "group_aggregate": 17897,
+    "top_n": 17800,
+    "cross_tab": 4000
+  },
+  "domains": {
+    "account": 3787,
+    "question_bank": 2705,
+    "exam": 17738,
+    "training": 20770,
+    "forum": 1620,
+    "configuration": 540,
+    "notification": 1620,
+    "system": 10260,
+    "news": 1620,
+    "evaluation": 5400,
+    "game": 2160,
+    "skill_matrix": 3780
+  },
+  "complexity": {
+    "joined_queries": 23363,
+    "multi_filter_queries": 18706,
+    "time_filter_queries": 34360,
+    "remote_dimension_queries": 15000,
+    "cross_tab_queries": 4000,
+    "compositional_exam_score_queries": 4000,
+    "exam_score_ranking_queries": 4000
+  },
+  "unique_questions": 72000
+}

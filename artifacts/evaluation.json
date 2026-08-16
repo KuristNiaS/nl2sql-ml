@@ -1,0 +1,1032 @@
+{
+  "samples": 72000,
+  "schema_fingerprint": "12cb478bbfe4925165148c60ef6ff46aa13d9d20d20a3b70bc2fd59ed18ea1ee",
+  "targets": {
+    "intent": {
+      "train_samples": 57600,
+      "test_samples": 14400,
+      "accuracy": 1.0,
+      "classes": {
+        "group_aggregate": 17897,
+        "top_n": 17800,
+        "count": 13537,
+        "list": 11428,
+        "aggregate": 7338,
+        "cross_tab": 4000
+      },
+      "classification_report": {
+        "aggregate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1468.0
+        },
+        "count": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2707.0
+        },
+        "cross_tab": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 800.0
+        },
+        "group_aggregate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3579.0
+        },
+        "list": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2286.0
+        },
+        "top_n": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3560.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 14400.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 14400.0
+        }
+      }
+    },
+    "domain": {
+      "train_samples": 57600,
+      "test_samples": 14400,
+      "accuracy": 1.0,
+      "classes": {
+        "training": 20770,
+        "exam": 17738,
+        "system": 10260,
+        "evaluation": 5400,
+        "account": 3787,
+        "skill_matrix": 3780,
+        "question_bank": 2705,
+        "game": 2160,
+        "forum": 1620,
+        "notification": 1620,
+        "news": 1620,
+        "configuration": 540
+      },
+      "classification_report": {
+        "account": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 757.0
+        },
+        "configuration": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "evaluation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1080.0
+        },
+        "exam": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3548.0
+        },
+        "forum": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 324.0
+        },
+        "game": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 432.0
+        },
+        "news": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 324.0
+        },
+        "notification": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 324.0
+        },
+        "question_bank": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 541.0
+        },
+        "skill_matrix": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 756.0
+        },
+        "system": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2052.0
+        },
+        "training": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 4154.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 14400.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 14400.0
+        }
+      }
+    },
+    "table": {
+      "train_samples": 57600,
+      "test_samples": 14400,
+      "accuracy": 1.0,
+      "classes": {
+        "clerk_kscj": 8541,
+        "Student_Course_Log": 4541,
+        "User_Info": 541,
+        "Student_User_Company_Info": 541,
+        "Duty_Category_Info": 541,
+        "Department": 541,
+        "Student_Info": 541,
+        "tm_tx": 541,
+        "tk_tkj": 541,
+        "tk_lx": 541,
+        "tk001": 541,
+        "WebFile_Image": 541,
+        "TkCategoryInfo": 541,
+        "Duty_Info": 541,
+        "StudentDutyInfo": 541,
+        "tk_cl_tx": 541,
+        "tk_cl": 541,
+        "Paper_Suit_Info": 541,
+        "tk_cl_ndzsd": 541,
+        "Suit_Detail_Image_Info": 541,
+        "Exam_Start": 541,
+        "Suit_Detail_Info": 541,
+        "clerk_cl": 541,
+        "Exam_Answer_Info": 541,
+        "Exam_Answer_File_Info": 541,
+        "Test_Setting_Info": 541,
+        "Student_ExerciseInfo": 541,
+        "Exercise_Info": 541,
+        "Exam_Apply": 541,
+        "Correct_Info": 541,
+        "Exam_Temp": 541,
+        "Course_Category_Info": 541,
+        "Course_Info": 541,
+        "Student_Integral": 541,
+        "Student_Course_Level": 541,
+        "Courseware_Login_Info": 541,
+        "Student_Courseware_Log": 541,
+        "Student_Courseware_Info": 541,
+        "Courseware_Info": 541,
+        "Login_Info": 541,
+        "Repository_Category_Info": 541,
+        "Student_Repository_Info": 541,
+        "Repository_Info": 541,
+        "Student_CourseInfo": 541,
+        "Elective_Info": 541,
+        "Study_Class_Course_Info": 541,
+        "Study_Class_Info": 541,
+        "Lectuer_Info": 541,
+        "Study_Class_Student_Info": 541,
+        "Study_Class_Apply_Info": 541,
+        "Scorm_Event": 541,
+        "OffTrain_Info": 541,
+        "Student_OffTrain_Info": 541,
+        "Study_Plan_Info": 541,
+        "Course_Discuss_Info": 541,
+        "OffTrain_Discuss_Info": 541,
+        "Student_OffTrain_Level": 541,
+        "Meeting_Student_Info": 541,
+        "Net_Meeting": 541,
+        "Course_Assistant_Info": 541,
+        "OffTrain_Assistant_Info": 540,
+        "BBSBoardInfo": 540,
+        "BBSTopicInfo": 540,
+        "BBSReplayInfo": 540,
+        "User_Option_Info": 540,
+        "Email_Info": 540,
+        "Sys_Mail_Receivers_Info": 540,
+        "Sys_Mail_Info": 540,
+        "Role_Info": 540,
+        "Student_Role_Info": 540,
+        "Sys_Access_Assign_Info": 540,
+        "Sys_Access_Info": 540,
+        "Short_Cut_Info": 540,
+        "Student_Short_CutInfo": 540,
+        "SysMenu_Info": 540,
+        "Certificate_Info": 540,
+        "Point_Action": 540,
+        "Student_Point_Log": 540,
+        "Group_Info": 540,
+        "Group_Student_Info": 540,
+        "Move_Resource_Log_Info": 540,
+        "Student_Certificate_Info": 540,
+        "Interest_Category_Info": 540,
+        "Interest_Info": 540,
+        "Interest_Course_Info": 540,
+        "Student_Interest_Info": 540,
+        "Interest_Repository_Info": 540,
+        "News_Type_Info": 540,
+        "News_Info": 540,
+        "News_Files": 540,
+        "Evaluation_Group": 540,
+        "Evaluation": 540,
+        "Evaluation_Items": 540,
+        "Evaluation_Score_Item": 540,
+        "Evaluation_Score_Item_Detail": 540,
+        "Evaluation_Expert": 540,
+        "Evaluation_Person": 540,
+        "Evaluation_Result": 540,
+        "Evaluation_Result_Item": 540,
+        "Evaluation_Result_Item_Detail": 540,
+        "GameInfo": 540,
+        "GameArrangeInfo": 540,
+        "GameStageInfo": 540,
+        "GameStudentInfo": 540,
+        "Skill_Category_Info": 540,
+        "Skill_Info": 540,
+        "Skill_Level_Info": 540,
+        "Duty_Skill_Require_Info": 540,
+        "Student_Skill_Info": 540,
+        "Course_Skill_Info": 540,
+        "Student_Skill_History_Info": 540
+      },
+      "classification_report": {
+        "BBSBoardInfo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "BBSReplayInfo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "BBSTopicInfo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Certificate_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Correct_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Course_Assistant_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Course_Category_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 109.0
+        },
+        "Course_Discuss_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Course_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Course_Skill_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Courseware_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Courseware_Login_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Department": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Duty_Category_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Duty_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Duty_Skill_Require_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Elective_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Email_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Evaluation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Evaluation_Expert": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Evaluation_Group": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Evaluation_Items": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Evaluation_Person": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Evaluation_Result": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Evaluation_Result_Item": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Evaluation_Result_Item_Detail": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Evaluation_Score_Item": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Evaluation_Score_Item_Detail": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Exam_Answer_File_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Exam_Answer_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Exam_Apply": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 109.0
+        },
+        "Exam_Start": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Exam_Temp": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 109.0
+        },
+        "Exercise_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "GameArrangeInfo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "GameInfo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "GameStageInfo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "GameStudentInfo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Group_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Group_Student_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Interest_Category_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Interest_Course_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Interest_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Interest_Repository_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Lectuer_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Login_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 109.0
+        },
+        "Meeting_Student_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Move_Resource_Log_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Net_Meeting": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "News_Files": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "News_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "News_Type_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "OffTrain_Assistant_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "OffTrain_Discuss_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "OffTrain_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Paper_Suit_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Point_Action": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Repository_Category_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Repository_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Role_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Scorm_Event": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Short_Cut_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Skill_Category_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Skill_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Skill_Level_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "StudentDutyInfo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_Certificate_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_CourseInfo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_Course_Level": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_Course_Log": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 909.0
+        },
+        "Student_Courseware_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 109.0
+        },
+        "Student_Courseware_Log": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 109.0
+        },
+        "Student_ExerciseInfo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_Integral": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_Interest_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_OffTrain_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_OffTrain_Level": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_Point_Log": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_Repository_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_Role_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_Short_CutInfo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_Skill_History_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_Skill_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Student_User_Company_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Study_Class_Apply_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Study_Class_Course_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 109.0
+        },
+        "Study_Class_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Study_Class_Student_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Study_Plan_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Suit_Detail_Image_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 109.0
+        },
+        "Suit_Detail_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "SysMenu_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Sys_Access_Assign_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Sys_Access_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Sys_Mail_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Sys_Mail_Receivers_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "Test_Setting_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "TkCategoryInfo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 109.0
+        },
+        "User_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "User_Option_Info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "WebFile_Image": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "clerk_cl": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "clerk_kscj": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1709.0
+        },
+        "tk001": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "tk_cl": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "tk_cl_ndzsd": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 109.0
+        },
+        "tk_cl_tx": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "tk_lx": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "tk_tkj": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "tm_tx": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 14400.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 14400.0
+        }
+      }
+    },
+    "aggregation": {
+      "train_samples": 37628,
+      "test_samples": 9407,
+      "accuracy": 1.0,
+      "classes": {
+        "count": 12971,
+        "sum": 11053,
+        "avg": 11018,
+        "max": 6518,
+        "min": 5475
+      },
+      "classification_report": {
+        "avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2203.0
+        },
+        "count": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2594.0
+        },
+        "max": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1304.0
+        },
+        "min": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1095.0
+        },
+        "sum": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2211.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 9407.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 9407.0
+        }
+      }
+    }
+  }
+}

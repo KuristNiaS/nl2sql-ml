@@ -1,0 +1,6651 @@
+{
+  "version": 2,
+  "domains": {
+    "account": [
+      "帐户系列",
+      "帐户",
+      "机构",
+      "学员",
+      "部门",
+      "岗位"
+    ],
+    "question_bank": [
+      "题库系列",
+      "题库",
+      "题目",
+      "题型"
+    ],
+    "exam": [
+      "考试系列",
+      "考试",
+      "试卷",
+      "答卷",
+      "成绩",
+      "测评"
+    ],
+    "training": [
+      "培训系列",
+      "培训",
+      "课程",
+      "课件",
+      "学习班",
+      "知识库"
+    ],
+    "forum": [
+      "论坛系列",
+      "论坛",
+      "主题",
+      "回帖"
+    ],
+    "configuration": [
+      "参数配置",
+      "参数",
+      "配置"
+    ],
+    "notification": [
+      "消息通知",
+      "消息",
+      "邮件",
+      "通知"
+    ],
+    "system": [
+      "系统数据",
+      "系统",
+      "权限",
+      "角色",
+      "菜单",
+      "证书",
+      "积分",
+      "群组",
+      "标签"
+    ],
+    "news": [
+      "资讯中心",
+      "资讯",
+      "新闻",
+      "栏目"
+    ],
+    "evaluation": [
+      "评分活动",
+      "评分",
+      "考评",
+      "评价活动"
+    ],
+    "game": [
+      "闯关游戏",
+      "闯关",
+      "游戏",
+      "关卡"
+    ],
+    "skill_matrix": [
+      "员工培训技能矩阵",
+      "能力",
+      "技能",
+      "矩阵"
+    ]
+  },
+  "tables": {
+    "User_Info": {
+      "domain": "account",
+      "label": "机构表 各地工办表",
+      "aliases": [
+        "User_Info机构",
+        "User_Info",
+        "机构表 各地工办表",
+        "机构 各地工办",
+        "各地工办",
+        "机构"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Name": [
+          "Name",
+          "企业代码",
+          "名称"
+        ],
+        "ActualName": [
+          "ActualName",
+          "用户全称"
+        ],
+        "Privince": [
+          "Privince",
+          "省份"
+        ],
+        "NetType": [
+          "NetType",
+          "上网方式"
+        ],
+        "Tel": [
+          "Tel",
+          "电话"
+        ],
+        "Fax": [
+          "Fax",
+          "传真"
+        ],
+        "ManagerDepartment": [
+          "ManagerDepartment",
+          "企业主管部门"
+        ],
+        "ManagerDuty": [
+          "ManagerDuty",
+          "企业主管职位"
+        ],
+        "ManagerEMail": [
+          "ManagerEMail",
+          "企业主管EMail"
+        ],
+        "ManagerMobile": [
+          "ManagerMobile",
+          "企业主管手机"
+        ],
+        "ManagerName": [
+          "ManagerName",
+          "企业主管姓名"
+        ],
+        "DomainName": [
+          "DomainName",
+          "登陆网站域名"
+        ],
+        "SpaceSize": [
+          "SpaceSize",
+          "课件存储空间"
+        ],
+        "TotalCoins": [
+          "TotalCoins",
+          "总币数"
+        ],
+        "UsedCoins": [
+          "UsedCoins",
+          "已使用币数"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "创建时间"
+        ],
+        "LoginTime": [
+          "LoginTime",
+          "登录时间"
+        ],
+        "LeaseType": [
+          "LeaseType",
+          "租赁类型"
+        ],
+        "Status": [
+          "Status",
+          "状态"
+        ],
+        "FTPWebFile": [
+          "Ftp目录 2008-1-23 林国生",
+          "FTPWebFile"
+        ],
+        "FTPServerName": [
+          "FTPServerName",
+          "课件服务器名称"
+        ],
+        "FTPServerIP": [
+          "FTPServerIP",
+          "课件服务器IP"
+        ],
+        "FTPUid": [
+          "FTPUid",
+          "FTP用户"
+        ],
+        "FTPPwd": [
+          "FTPPwd",
+          "FTP密码"
+        ],
+        "WebPath": [
+          "FTP目录对应的虚拟目录名",
+          "WebPath"
+        ],
+        "ParentID": [
+          "ParentID",
+          "上级机构ID"
+        ],
+        "Path": [
+          "机构界别路径",
+          "Path"
+        ],
+        "CertificatePrefix": [
+          "CertificatePrefix",
+          "证书前缀"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Department": {
+      "domain": "account",
+      "label": "部门表",
+      "aliases": [
+        "Department部门",
+        "Department",
+        "部门表",
+        "部门"
+      ],
+      "fields": {
+        "ID": [
+          "ID",
+          "主键",
+          "编号"
+        ],
+        "DeptNo": [
+          "DeptNo"
+        ],
+        "OrganID": [
+          "OrganID"
+        ],
+        "DeptName": [
+          "DeptName",
+          "部门名称"
+        ],
+        "ParentID": [
+          "ParentID"
+        ],
+        "CreateUserID": [
+          "CreateUserID",
+          "和学员表关联"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_Info": {
+      "domain": "account",
+      "label": "学员表",
+      "aliases": [
+        "Student_Info",
+        "学员表",
+        "学员"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "Name": [
+          "Name",
+          "用户名",
+          "名称"
+        ],
+        "Password": [
+          "Password",
+          "登陆密码"
+        ],
+        "ActualName": [
+          "ActualName",
+          "真实姓名"
+        ],
+        "Degree": [
+          "Degree",
+          "身份"
+        ],
+        "Department": [
+          "Department",
+          "部门"
+        ],
+        "Duty": [
+          "Duty",
+          "职位"
+        ],
+        "EMail": [
+          "电子邮件地址",
+          "EMail"
+        ],
+        "Tel": [
+          "Tel",
+          "电话"
+        ],
+        "Mobile": [
+          "Mobile",
+          "手机"
+        ],
+        "ManagerId": [
+          "ManagerId",
+          "管理者编号"
+        ],
+        "Status": [
+          "Status",
+          "状态"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "创建时间",
+          "注册时间"
+        ],
+        "JoinTime": [
+          "JoinTime",
+          "入职时间"
+        ],
+        "Sex": [
+          "性别 0 女 1 男",
+          "Sex"
+        ],
+        "WorkType": [
+          "WorkType",
+          "工作类型"
+        ],
+        "Birthday": [
+          "Birthday",
+          "出生日期"
+        ],
+        "Address": [
+          "Address",
+          "住址"
+        ],
+        "Post": [
+          "Post",
+          "邮编"
+        ],
+        "Code": [
+          "身份证号码",
+          "Code"
+        ],
+        "OtherC1": [
+          "OtherC1",
+          "备用字符1"
+        ],
+        "OtherC2": [
+          "OtherC2",
+          "备用字符2"
+        ],
+        "OtherC3": [
+          "OtherC3",
+          "备用字符3"
+        ],
+        "OtherC4": [
+          "OtherC4",
+          "备用字符4"
+        ],
+        "OtherC5": [
+          "OtherC5",
+          "备用字符5"
+        ],
+        "OtherC6": [
+          "OtherC6",
+          "备用字符6"
+        ],
+        "OtherC7": [
+          "OtherC7",
+          "备用字符7"
+        ],
+        "OtherC8": [
+          "OtherC8",
+          "备用字符8"
+        ],
+        "OtherC9": [
+          "OtherC9",
+          "备用字符9"
+        ],
+        "OtherI1": [
+          "OtherI1",
+          "备用整型1"
+        ],
+        "OtherI2": [
+          "OtherI2",
+          "备用整型2"
+        ],
+        "OtherI3": [
+          "OtherI3",
+          "备用整型3"
+        ],
+        "OtherI4": [
+          "人类列别 0 考评员 1 平台工作人员",
+          "OtherI4"
+        ],
+        "OtherD1": [
+          "OtherD1",
+          "备用日期1"
+        ],
+        "OtherD2": [
+          "OtherD2",
+          "备用日期2"
+        ],
+        "Integral": [
+          "Integral",
+          "Int"
+        ],
+        "PointsBalance": [
+          "PointsBalance",
+          "积分当前余额",
+          "当前积分",
+          "积分余额"
+        ],
+        "PointsTotal": [
+          "PointsTotal",
+          "积分累计获得",
+          "累计积分",
+          "累计获得积分",
+          "总积分"
+        ],
+        "ManageUserId": [
+          "ManageUserId",
+          "管辖机构Id"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_User_Company_Info": {
+      "domain": "account",
+      "label": "学员公办公司",
+      "aliases": [
+        "Student_User_Company_Info",
+        "学员公办公司"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "人员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "CompanyId": [
+          "CompanyId",
+          "公司单位ID"
+        ],
+        "CompanyName": [
+          "CompanyName",
+          "公司名称"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "序号自增",
+          "排序号",
+          "序号"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "创建人"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ]
+      }
+    },
+    "Duty_Category_Info": {
+      "domain": "account",
+      "label": "岗位分类表",
+      "aliases": [
+        "Duty_Category_Info",
+        "岗位分类表",
+        "岗位分类"
+      ],
+      "fields": {
+        "ID": [
+          "主键ID",
+          "ID",
+          "主键",
+          "编号"
+        ],
+        "Name": [
+          "岗位分类名称",
+          "Name",
+          "名称"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序列号",
+          "排序号",
+          "序号"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ]
+      }
+    },
+    "Duty_Info": {
+      "domain": "account",
+      "label": "岗位表",
+      "aliases": [
+        "Duty_Info岗位",
+        "Duty_Info",
+        "岗位表",
+        "岗位"
+      ],
+      "fields": {
+        "ID": [
+          "主键ID",
+          "ID",
+          "主键",
+          "编号"
+        ],
+        "DuteCategoryId": [
+          "DuteCategoryId",
+          "岗位分类ID"
+        ],
+        "Name": [
+          "Name",
+          "名称",
+          "岗位"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序列号",
+          "排序号",
+          "序号"
+        ],
+        "Note": [
+          "岗位说明 包含对岗位的说明和岗位的要求",
+          "Note"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建日期",
+          "创建时间"
+        ],
+        "NextDutyId": [
+          "NextDutyId",
+          "进阶岗位"
+        ]
+      }
+    },
+    "StudentDutyInfo": {
+      "domain": "account",
+      "label": "学员岗位表",
+      "aliases": [
+        "StudentDutyInfo",
+        "学员岗位表",
+        "学员岗位"
+      ],
+      "fields": {
+        "ID": [
+          "主键ID",
+          "ID",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "DutyId": [
+          "DutyId",
+          "岗位ID",
+          "岗位编号",
+          "岗位"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建日期",
+          "创建时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序列号",
+          "排序号",
+          "序号"
+        ],
+        "BeginTrainTime": [
+          "BeginTrainTime",
+          "开始培训日期"
+        ],
+        "FinishTrainTime": [
+          "FinishTrainTime",
+          "结束培训日期"
+        ],
+        "DutyStatus": [
+          "岗位认可状态 0 尚未被确认 1 确认岗位",
+          "DutyStatus"
+        ],
+        "TrainStatus": [
+          "岗位培训状态 0 未未完成 1 已完成",
+          "TrainStatus"
+        ]
+      }
+    },
+    "tm_tx": {
+      "domain": "question_bank",
+      "label": "tm_tx",
+      "aliases": [
+        "tm_tx",
+        "题型表",
+        "题型"
+      ],
+      "fields": {
+        "Tm_tx_ID": [
+          "Tm_tx_ID",
+          "题型主键ID"
+        ],
+        "Tm_tx_name": [
+          "Tm_tx_name",
+          "题型标题"
+        ],
+        "BaseType": [
+          "BaseType"
+        ],
+        "DefaultScore": [
+          "DefaultScore",
+          "改题型的题目的默认分数"
+        ],
+        "Notes": [
+          "Notes",
+          "在做题"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "tk_tkj": {
+      "domain": "question_bank",
+      "label": "题库集表",
+      "aliases": [
+        "tk_tkj",
+        "章题库集",
+        "题库集表",
+        "章题库",
+        "题库集"
+      ],
+      "fields": {
+        "Tk_tkj_id": [
+          "Tk_tkj_id",
+          "章"
+        ],
+        "Tk_tkj_name": [
+          "Tk_tkj_name",
+          "章"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "章"
+        ],
+        "Tkj_memo": [
+          "Tkj_memo",
+          "章"
+        ],
+        "Tkj_gly": [
+          "Tkj_gly",
+          "题库管理员"
+        ],
+        "Tkj_Type": [
+          "Tkj_Type",
+          "0=公共题库集"
+        ],
+        "Tkj_AllowLearn": [
+          "Tkj_AllowLearn",
+          "允许题库学习 1=允许"
+        ],
+        "Tkj_Allowsearch": [
+          "Tkj_Allowsearch",
+          "允许题库检索 1=允许"
+        ],
+        "Clerk_ID": [
+          "Clerk_ID",
+          "题库管理员"
+        ],
+        "TKJ_Share": [
+          "TKJ_Share",
+          "共享权限"
+        ],
+        "CourseTypeId": [
+          "0=普通题库集 >0=课件类别ID",
+          "CourseTypeId"
+        ],
+        "IsShared": [
+          "0 不向下级机构共享 1 向下级机构共享",
+          "IsShared"
+        ],
+        "IsDaily": [
+          "是否是每日一题题库集",
+          "IsDaily"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "tk_lx": {
+      "domain": "question_bank",
+      "label": "题库集表",
+      "aliases": [
+        "tk_lx",
+        "节题库表",
+        "节题库",
+        "题库表",
+        "题库"
+      ],
+      "fields": {
+        "tk_lx_id": [
+          "tk_lx_id",
+          "节"
+        ],
+        "tk_lx_name": [
+          "tk_lx_name",
+          "节"
+        ],
+        "Tk_tkj_id": [
+          "Tk_tkj_id",
+          "属于章"
+        ],
+        "TKCreatTime": [
+          "TKCreatTime",
+          "创建时间"
+        ],
+        "TK_memo": [
+          "TK_memo",
+          "备注"
+        ],
+        "tkj_gly": [
+          "tkj_gly",
+          "创建人"
+        ],
+        "Tk_AllowLearn": [
+          "Tk_AllowLearn",
+          "留做备用"
+        ],
+        "Tk_Allowsearch": [
+          "Tk_Allowsearch",
+          "允许题库检索及学习"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "tk001": {
+      "domain": "question_bank",
+      "label": "题目表",
+      "aliases": [
+        "tk001",
+        "题目表",
+        "题目"
+      ],
+      "fields": {
+        "Tk_Tkj_Id": [
+          "Tk_Tkj_Id",
+          "题库集ID"
+        ],
+        "Tk_lx_id": [
+          "Tk_lx_id",
+          "节"
+        ],
+        "Tm_ID": [
+          "Tm_ID",
+          "题目的编号"
+        ],
+        "Tm_zy": [
+          "题目答案说明",
+          "Tm_zy"
+        ],
+        "Tm_tx_ID": [
+          "Tm_tx_ID",
+          "题目的题型ID"
+        ],
+        "Tm_nr": [
+          "Tm_nr",
+          "题目的内容"
+        ],
+        "Tm_fs": [
+          "Tm_fs",
+          "题目的分数"
+        ],
+        "Tm_nd": [
+          "Tm_nd",
+          "题目的难度"
+        ],
+        "tm_zsd": [
+          "tm_zsd",
+          "题目的知识点"
+        ],
+        "Tm_da": [
+          "题目的可选项",
+          "Tm_da"
+        ],
+        "Tm_dasm": [
+          "题目的可选项数目",
+          "Tm_dasm"
+        ],
+        "Tm_bzda": [
+          "Tm_bzda",
+          "题目的答案"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ],
+        "CreateName": [
+          "CreateName",
+          "创建人"
+        ],
+        "ColCount": [
+          "ColCount",
+          "候选项的显示方式"
+        ],
+        "ParentID": [
+          "ParentID",
+          "主题ID"
+        ],
+        "IsCombination": [
+          "是否是组合题 0――非组合题 1――组合题",
+          "IsCombination"
+        ],
+        "AllowUpload": [
+          "AllowUpload"
+        ],
+        "ValidTime": [
+          "ValidTime",
+          "有效期"
+        ],
+        "MasteryLevel": [
+          "MasteryLevel",
+          "1 掌握 2了解"
+        ],
+        "Status": [
+          "0 临时题目 1 正式题目",
+          "Status",
+          "状态"
+        ],
+        "TaskId": [
+          "TaskId",
+          "编撰任务Id"
+        ],
+        "TempTmId": [
+          "指向temptk001主键Id",
+          "TempTmId"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "WebFile_Image": {
+      "domain": "question_bank",
+      "label": "题目附件表",
+      "aliases": [
+        "WebFile_Image",
+        "题目附件表",
+        "题目附件"
+      ],
+      "fields": {
+        "ImageID": [
+          "ImageID",
+          "附件ID"
+        ],
+        "TableId": [
+          "TableId",
+          "关联表ID"
+        ],
+        "Type": [
+          "0=题库中、随机试卷 1=教材 2=课程课件",
+          "Type",
+          "类型"
+        ],
+        "DisplayType": [
+          "DisplayType",
+          "附件显示方式"
+        ],
+        "Postion": [
+          "Postion"
+        ],
+        "FilePath": [
+          "在WEB端的相对路径",
+          "FilePath"
+        ],
+        "FileName": [
+          "FileName",
+          "附件的文件名"
+        ],
+        "FileExt": [
+          "FileExt",
+          "附件的扩展名"
+        ],
+        "FileSize": [
+          "FileSize",
+          "附件的文件大小"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ],
+        "Other1": [
+          "Other1",
+          "备用字段"
+        ],
+        "Other2": [
+          "Other2",
+          "备用字段"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "TkCategoryInfo": {
+      "domain": "exam",
+      "label": "考试分类表",
+      "aliases": [
+        "TkCategoryInfo",
+        "考试分类表",
+        "考试分类"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "Name": [
+          "Name",
+          "分类名称",
+          "名称"
+        ],
+        "ParentId": [
+          "ParentId",
+          "上级分类编号"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "分类注册时间",
+          "创建时间"
+        ],
+        "Creator": [
+          "Creator",
+          "课程分类创建人"
+        ],
+        "Path": [
+          "Path",
+          "分类路径"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "tk_cl": {
+      "domain": "exam",
+      "label": "考试表",
+      "aliases": [
+        "tk_cl",
+        "考试表",
+        "考试"
+      ],
+      "fields": {
+        "Tk_cl_id": [
+          "Tk_cl_id",
+          "试卷编号"
+        ],
+        "Tk_cl_name": [
+          "Tk_cl_name",
+          "试卷名称"
+        ],
+        "Tk_cl_type": [
+          "Tk_cl_type",
+          "试卷模式"
+        ],
+        "Tk_cl_time": [
+          "Tk_cl_time",
+          "允许考试的时间"
+        ],
+        "Valid_btime": [
+          "Valid_btime",
+          "有效起始时间"
+        ],
+        "Valid_etime": [
+          "Valid_etime",
+          "有效结束时间"
+        ],
+        "Gd": [
+          "试卷类型",
+          "Gd"
+        ],
+        "Tk_cl_lx_type": [
+          "Tk_cl_lx_type",
+          "不用"
+        ],
+        "Tk_cl_pf": [
+          "试卷是否需要手工判分1=要判分",
+          "Tk_cl_pf"
+        ],
+        "GuestEnable": [
+          "是否允许Guest帐户参加该考试 ”1”=允许",
+          "GuestEnable"
+        ],
+        "Clerk_all": [
+          "是否所有考生均可参加 1=是",
+          "Clerk_all"
+        ],
+        "Is_100": [
+          "Is_100",
+          "折算后总分"
+        ],
+        "CreatTime": [
+          "CreatTime",
+          "试卷创建时间"
+        ],
+        "AllowSeePaper": [
+          "AllowSeePaper"
+        ],
+        "IsExcel": [
+          "1=是从EXCEL中生成试卷",
+          "IsExcel"
+        ],
+        "PassFs": [
+          "PassFs",
+          "试卷及格分数"
+        ],
+        "clerk_Id": [
+          "clerk_Id",
+          "出卷人ID"
+        ],
+        "IsGDFS": [
+          "是否是按题型指定分数",
+          "IsGDFS"
+        ],
+        "isJob": [
+          "isJob",
+          "培训班ID"
+        ],
+        "ISSavePaper": [
+          "ISSavePaper",
+          "答卷是否保存参数"
+        ],
+        "KsSavePaper": [
+          "KsSavePaper",
+          "答卷保存参数"
+        ],
+        "KsCycle": [
+          "自动保存试卷时间设置",
+          "KsCycle"
+        ],
+        "MinKsNum": [
+          "MinKsNum",
+          "最小考试次数"
+        ],
+        "MaxKsNum": [
+          "MaxKsNum",
+          "最大考试次数"
+        ],
+        "KSValidate": [
+          "KSValidate",
+          "0=公共考试"
+        ],
+        "Is_CjAvg": [
+          "是否是竞赛 1是普通考试",
+          "Is_CjAvg"
+        ],
+        "HighCJSum": [
+          "现改为提高交卷性能 1=正常交卷",
+          "HighCJSum"
+        ],
+        "Tk_cl_UserAlias": [
+          "Tk_cl_UserAlias",
+          "出卷人"
+        ],
+        "Tk_cl_gly": [
+          "Tk_cl_gly",
+          "管理员"
+        ],
+        "IsOrder": [
+          "出题是否打乱排序",
+          "IsOrder"
+        ],
+        "ViewKsCj": [
+          "ViewKsCj",
+          "成绩是否公开"
+        ],
+        "IsShowHomePage": [
+          "IsShowHomePage",
+          "是否在主页显示排行榜"
+        ],
+        "IsShowFS": [
+          "--考试后是否显示分数",
+          "IsShowFS"
+        ],
+        "Tk_Memo": [
+          "新增的试卷说明字段",
+          "Tk_Memo"
+        ],
+        "IsSaveName": [
+          "IsSaveName",
+          "针对问卷调查"
+        ],
+        "IsPublic": [
+          "IsPublic",
+          "调查"
+        ],
+        "ExitMode": [
+          "ExitMode",
+          "考试或调查"
+        ],
+        "ShowURL": [
+          "ShowURL",
+          "公开的链接地址"
+        ],
+        "Other1": [
+          "是否包括组合题",
+          "Other1"
+        ],
+        "Other2": [
+          "Other2",
+          "备用字段"
+        ],
+        "OtherInt1": [
+          "OtherInt1",
+          "试题显示方式"
+        ],
+        "OtherInt2": [
+          "OtherInt2",
+          "是否启用本地缓存"
+        ],
+        "IsAnalyze": [
+          "IsAnalyze",
+          "是否做历史成绩比较"
+        ],
+        "IsRerow": [
+          "是否改变选择题选项顺序1-改变0不改变",
+          "IsRerow"
+        ],
+        "tOrder": [
+          "记录题型的顺序 含分数",
+          "tOrder"
+        ],
+        "MoveOutTimes": [
+          "MoveOutTimes",
+          "考试时移出WEB页面次数"
+        ],
+        "IsCool": [
+          "IsCool",
+          "精品推荐"
+        ],
+        "SiteType": [
+          "位置类型 1 学习班课程",
+          "SiteType"
+        ],
+        "SiteID": [
+          "课程ID 考试分类ID 课件ID 竞赛分类ID",
+          "SiteID"
+        ],
+        "LowestScale": [
+          "目标训练的最低做对率控制",
+          "LowestScale"
+        ],
+        "IsLowestControl": [
+          "是否进行最低作对率控制 ０不控制 １控制",
+          "IsLowestControl"
+        ],
+        "OrderNumber": [
+          "OrderNumber",
+          "顺序号"
+        ],
+        "SuitNumber": [
+          "本套试卷采用的试题套数",
+          "SuitNumber"
+        ],
+        "Status": [
+          "禁用标志1 禁用 0 启用",
+          "Status",
+          "状态"
+        ],
+        "IsShared": [
+          "IsShared",
+          "向下级机构"
+        ],
+        "CertificateId": [
+          "CertificateId",
+          "证书ID"
+        ],
+        "KSDesc": [
+          "KSDesc",
+          "考试说明"
+        ],
+        "Integral": [
+          "Integral",
+          "积分"
+        ],
+        "TKCategoryId": [
+          "TKCategoryId",
+          "考试分类标识"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "tk_cl_tx": {
+      "domain": "exam",
+      "label": "试卷策略题型分数.",
+      "aliases": [
+        "试卷策略题型分数.",
+        "tk_cl_tx"
+      ],
+      "fields": {
+        "Tk_cl_tx_id": [
+          "Tk_cl_tx_id"
+        ],
+        "Tk_Cl_ID": [
+          "Tk_Cl_ID"
+        ],
+        "Tm_Tx_ID": [
+          "Tm_Tx_ID",
+          "题型ID"
+        ],
+        "FS": [
+          "FS",
+          "分数"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "tk_cl_ndzsd": {
+      "domain": "exam",
+      "label": "出题策略表",
+      "aliases": [
+        "tk_cl_ndzsd",
+        "出题策略表",
+        "出题策略"
+      ],
+      "fields": {
+        "Cl_ID": [
+          "Cl_ID",
+          "策略编号"
+        ],
+        "tk_cl_id": [
+          "tk_cl_id",
+          "试卷编号"
+        ],
+        "Tk_tkj_Id": [
+          "Tk_tkj_Id",
+          "题库集"
+        ],
+        "tm_nd": [
+          "tm_nd",
+          "题目的难度"
+        ],
+        "tk_lx_id": [
+          "tk_lx_id",
+          "题库的编号"
+        ],
+        "tm_zsd": [
+          "tm_zsd",
+          "知识点"
+        ],
+        "tm_tx_id": [
+          "tm_tx_id",
+          "题目的题型"
+        ],
+        "MasteryLevel": [
+          "MasteryLevel",
+          "1 掌握 2了解"
+        ],
+        "tm_num": [
+          "tm_num",
+          "题目的数量"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "clerk_cl": {
+      "domain": "exam",
+      "label": "试卷考生表",
+      "aliases": [
+        "clerk_cl",
+        "试卷考生表",
+        "试卷考生"
+      ],
+      "fields": {
+        "Cl_clerk_ID": [
+          "Cl_clerk_ID",
+          "试卷相关用户ID"
+        ],
+        "Tk_cl_id": [
+          "Tk_cl_id",
+          "策略编号"
+        ],
+        "Clerk_ID": [
+          "Clerk_ID",
+          "用户ID"
+        ],
+        "Clerk_Type": [
+          "Clerk_Type",
+          "用户类型"
+        ],
+        "clerk_name": [
+          "clerk_name",
+          "考生登录名"
+        ],
+        "ExamServerId": [
+          "0=主服务器 >0为分布考试服务器ID",
+          "ExamServerId"
+        ],
+        "WaitArrange": [
+          "WaitArrange",
+          "安排考试的状态"
+        ],
+        "ExamBeginTime": [
+          "ExamBeginTime",
+          "安排开始考试时间"
+        ],
+        "ExamEndTime": [
+          "ExamEndTime",
+          "安排结束考试时间"
+        ],
+        "Clerk_Pf": [
+          "Clerk_Pf",
+          "安排的评分人ID"
+        ],
+        "Exam_Detail": [
+          "Exam_Detail",
+          "说明"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Paper_Suit_Info": {
+      "domain": "exam",
+      "label": "试卷套数表",
+      "aliases": [
+        "Paper_Suit_Info",
+        "试卷套数表",
+        "试卷套数"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Tk_Cl_Id": [
+          "Tk_Cl_Id"
+        ],
+        "FileAddress": [
+          "产生的tm js文件相对路径",
+          "FileAddress"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Suit_Detail_Image_Info": {
+      "domain": "exam",
+      "label": "试卷题目附件表",
+      "aliases": [
+        "Suit_Detail_Image_Info试卷题目附件",
+        "Suit_Detail_Image_Info",
+        "试卷题目附件表",
+        "试卷题目附件"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "SuitDetailId": [
+          "SuitDetailId"
+        ],
+        "DisplayType": [
+          "DisplayType",
+          "附件显示方式"
+        ],
+        "Postion": [
+          "Postion"
+        ],
+        "FilePath": [
+          "在WEB端的相对路径",
+          "FilePath"
+        ],
+        "FileName": [
+          "FileName",
+          "附件的文件名"
+        ],
+        "FileExt": [
+          "FileExt",
+          "附件的扩展名"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ],
+        "Other1": [
+          "Other1",
+          "备用字段"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Exam_Start": {
+      "domain": "exam",
+      "label": "考试开考表",
+      "aliases": [
+        "Exam_Start考试开考",
+        "Exam_Start",
+        "考试开考表",
+        "考试开考"
+      ],
+      "fields": {
+        "Id": [
+          "主键ID",
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员Id",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "Tk_Cl_Id": [
+          "Tk_Cl_Id",
+          "考试Id"
+        ],
+        "PaperSuitInfoId": [
+          "PaperSuitInfoId"
+        ],
+        "StartTime": [
+          "StartTime",
+          "开始考试时间"
+        ],
+        "IP": [
+          "考生考试的客户端IP地址",
+          "IP"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序列",
+          "排序号",
+          "序号"
+        ],
+        "IsLock": [
+          "1 被锁定 0 未被锁定 锁定的就不能恢复考试了",
+          "IsLock"
+        ]
+      }
+    },
+    "Suit_Detail_Info": {
+      "domain": "exam",
+      "label": "试卷题目明细表",
+      "aliases": [
+        "Suit_Detail_Info试卷题目明细",
+        "Suit_Detail_Info",
+        "试卷题目明细表",
+        "试卷题目明细"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "PaperSuitInfoId": [
+          "PaperSuitInfoId"
+        ],
+        "Tm_Id": [
+          "题目编号 如果是Excel创建的试卷",
+          "Tm_Id"
+        ],
+        "Tm_tx_ID": [
+          "Tm_tx_ID",
+          "题目的题型ID"
+        ],
+        "Tm_zy": [
+          "题目答案说明",
+          "Tm_zy"
+        ],
+        "Tm_nr": [
+          "Tm_nr",
+          "题目内容"
+        ],
+        "Tm_fs": [
+          "Tm_fs",
+          "题目分数"
+        ],
+        "Tm_nd": [
+          "Tm_nd",
+          "题目难度"
+        ],
+        "Tm_zsd": [
+          "Tm_zsd",
+          "题目知识点"
+        ],
+        "Tm_da": [
+          "Tm_da",
+          "题目可选项"
+        ],
+        "Tm_dasm": [
+          "Tm_dasm",
+          "题目可选项数目"
+        ],
+        "Tm_bzda": [
+          "Tm_bzda",
+          "题目答案"
+        ],
+        "ColCount": [
+          "ColCount",
+          "候选项的显示方式"
+        ],
+        "ParentID": [
+          "ParentID",
+          "主题ID"
+        ],
+        "IsCombination": [
+          "是否是组合题 0――非组合题 1――组合题",
+          "IsCombination"
+        ],
+        "AllowUpload": [
+          "AllowUpload"
+        ],
+        "MasteryLevel": [
+          "MasteryLevel",
+          "1 掌握 2 了解 2"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Exam_Temp": {
+      "domain": "exam",
+      "label": "考试中场记录表",
+      "aliases": [
+        "Exam_Temp",
+        "考试中场记录表",
+        "考试中场记录"
+      ],
+      "fields": {
+        "Id": [
+          "主键ID",
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "ExamStartId": [
+          "ExamStartId",
+          "开考ID"
+        ],
+        "SaveTime": [
+          "SaveTime",
+          "保存时间"
+        ],
+        "AnswerPackage": [
+          "AnswerPackage",
+          "学员答题情况打包Xml"
+        ],
+        "MoveOutTimes": [
+          "MoveOutTimes",
+          "移除考试页面次数"
+        ],
+        "ExamTime": [
+          "ExamTime",
+          "考试用时"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "clerk_kscj": {
+      "domain": "exam",
+      "label": "考试成绩表",
+      "aliases": [
+        "clerk_kscj",
+        "考试成绩表",
+        "考试成绩",
+        "成绩记录",
+        "考生成绩",
+        "考试分数"
+      ],
+      "fields": {
+        "Clerk_kscj_ID": [
+          "Clerk_kscj_ID",
+          "考试记录的主ID"
+        ],
+        "clerk_ID": [
+          "clerk_ID",
+          "考生的登录ID"
+        ],
+        "Tk_cl_id": [
+          "Tk_cl_id",
+          "试卷编号"
+        ],
+        "Clerk_ks_status": [
+          "Clerk_ks_status",
+          "考试状态"
+        ],
+        "clerk_ks_btime": [
+          "clerk_ks_btime",
+          "考生考试开始时间"
+        ],
+        "clerk_ks_etime": [
+          "clerk_ks_etime",
+          "考生考试结束时间"
+        ],
+        "Cj": [
+          "Cj",
+          "成绩"
+        ],
+        "clerk_xzdf": [
+          "clerk_xzdf",
+          "客观题得分"
+        ],
+        "clerk_wddf": [
+          "clerk_wddf",
+          "主管题得分"
+        ],
+        "clerk_wdpf": [
+          "clerk_wdpf",
+          "是否手工评分"
+        ],
+        "Rate": [
+          "试卷分数折算率",
+          "Rate"
+        ],
+        "Type": [
+          "Type",
+          "成绩来源",
+          "类型"
+        ],
+        "Ks_Time": [
+          "Ks_Time",
+          "考试时间"
+        ],
+        "Cause": [
+          "手工增加的成绩的原因",
+          "Cause"
+        ],
+        "Clerk_pj": [
+          "Clerk_pj",
+          "判卷人"
+        ],
+        "Other1": [
+          "Other1",
+          "备用字段"
+        ],
+        "OtherInt": [
+          "OtherInt",
+          "备用字段"
+        ],
+        "Clerk_Result": [
+          "Clerk_Result",
+          "text"
+        ],
+        "QuestionGather": [
+          "QuestionGather",
+          "评测试卷用做结论 其他不用"
+        ],
+        "AnswerGather": [
+          "AnswerGather",
+          "客观题考生答案的集合"
+        ],
+        "MoveOutTimes": [
+          "MoveOutTimes",
+          "移出页面次数"
+        ],
+        "Clerk_Pf": [
+          "Clerk_Pf",
+          "答卷判分人"
+        ],
+        "Clerk_Reviewer": [
+          "Clerk_Reviewer",
+          "答卷复评人"
+        ],
+        "IsNews": [
+          "IsNews",
+          "作废"
+        ],
+        "DFJStatus": [
+          "待分解状态 0 待分解 1 已分解",
+          "DFJStatus"
+        ],
+        "ExamStartId": [
+          "ExamStartId",
+          "开考ID"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Exam_Answer_Info": {
+      "domain": "exam",
+      "label": "考试答卷表",
+      "aliases": [
+        "Exam_Answer_Info",
+        "考试答卷表",
+        "考试答卷"
+      ],
+      "fields": {
+        "Id": [
+          "主键ID",
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Clerk_Kscj_Id": [
+          "Clerk_Kscj_Id",
+          "考试交卷表ID 外键"
+        ],
+        "SuitDetailId": [
+          "SuitDetailId",
+          "套题明细ID"
+        ],
+        "Answer": [
+          "Answer",
+          "学员回答"
+        ],
+        "Score": [
+          "Score",
+          "本题得分",
+          "分数",
+          "得分"
+        ],
+        "Notes": [
+          "手工阅卷的时候给教师些备注用",
+          "Notes"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Exam_Answer_File_Info": {
+      "domain": "exam",
+      "label": "考试答卷附件表",
+      "aliases": [
+        "Exam_Answer_File_Info",
+        "考试答卷附件表",
+        "考试答卷附件"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "ExamStartId": [
+          "ExamStartId",
+          "开考ID"
+        ],
+        "SuitDetailId": [
+          "SuitDetailId",
+          "考题ID"
+        ],
+        "FileName": [
+          "FileName",
+          "文件名"
+        ],
+        "FileImage": [
+          "FileImage",
+          "文件流"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Test_Setting_Info": {
+      "domain": "exam",
+      "label": "测评分数评价设置表",
+      "aliases": [
+        "Test_Setting_Info",
+        "测评分数评价设置表",
+        "测评分数评价设置"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Tk_Cl_Id": [
+          "Tk_Cl_Id",
+          "测评ID"
+        ],
+        "StartScore": [
+          "StartScore",
+          "低分"
+        ],
+        "EndScore": [
+          "EndScore",
+          "高分"
+        ],
+        "Result": [
+          "Result",
+          "测评结论"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_ExerciseInfo": {
+      "domain": "exam",
+      "label": "学员练习选库表",
+      "aliases": [
+        "Student_ExerciseInfo",
+        "学员练习选库表",
+        "学员练习选库"
+      ],
+      "fields": {
+        "Id": [
+          "主键ID",
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "Tk_Lx_Id": [
+          "Tk_Lx_Id",
+          "题库ID"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "选择时间"
+        ],
+        "Times": [
+          "Times",
+          "练习次数"
+        ],
+        "DoNumber": [
+          "DoNumber",
+          "答题总数"
+        ],
+        "RightNumber": [
+          "RightNumber",
+          "正确数"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序列号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Exercise_Info": {
+      "domain": "exam",
+      "label": "练习记录",
+      "aliases": [
+        "Exercise_Info",
+        "练习记录"
+      ],
+      "fields": {
+        "Id": [
+          "主键ID",
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "Tm_Id": [
+          "Tm_Id",
+          "题目ID"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "创建时间",
+          "答题时间"
+        ],
+        "Answer": [
+          "学员提交的答案",
+          "Answer"
+        ],
+        "Status": [
+          "0 答题正确 1 答题错误",
+          "Status",
+          "状态"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Exam_Apply": {
+      "domain": "exam",
+      "label": "考试报名表",
+      "aliases": [
+        "Exam_Apply",
+        "考试报名表",
+        "考试报名"
+      ],
+      "fields": {
+        "Id": [
+          "主键ID",
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "ExamId": [
+          "ExamId",
+          "试卷ID"
+        ],
+        "Status": [
+          "0 待审核1 已审核 -1驳回",
+          "Status",
+          "状态"
+        ],
+        "AuditorId": [
+          "AuditorId",
+          "审核人ID"
+        ],
+        "AuditTime": [
+          "AuditTime",
+          "审核日期"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "申请日期"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Correct_Info": {
+      "domain": "exam",
+      "label": "纠错记录",
+      "aliases": [
+        "Correct_Info",
+        "纠错记录"
+      ],
+      "fields": {
+        "Id": [
+          "主键ID",
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "纠错人ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "Tm_Id": [
+          "Tm_Id",
+          "题目ID"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "创建时间",
+          "纠错时间"
+        ],
+        "Notes": [
+          "Notes",
+          "纠错意见"
+        ],
+        "Status": [
+          "0 待审核 1 认可纠错 -1不接受纠错",
+          "Status",
+          "状态"
+        ],
+        "AuditorId": [
+          "AuditorId",
+          "审核人ID"
+        ],
+        "AuditTime": [
+          "AuditTime",
+          "审核时间"
+        ],
+        "AuditNotes": [
+          "AuditNotes",
+          "审核意见"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "序列号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Course_Category_Info": {
+      "domain": "training",
+      "label": "课程分类表",
+      "aliases": [
+        "Course_Category_Info",
+        "课程分类表",
+        "课程分类"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "Name": [
+          "Name",
+          "分类名称",
+          "名称"
+        ],
+        "ParentId": [
+          "ParentId",
+          "上级分类编号"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "分类注册时间",
+          "创建时间"
+        ],
+        "Creator": [
+          "Creator",
+          "课程分类创建人"
+        ],
+        "Path": [
+          "Path",
+          "分类路径"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Course_Info": {
+      "domain": "training",
+      "label": "课程表",
+      "aliases": [
+        "Course_Info",
+        "课程表",
+        "课程"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "Name": [
+          "Name",
+          "课程名称",
+          "名称"
+        ],
+        "CourseCategoryId": [
+          "CourseCategoryId",
+          "课程分类编号"
+        ],
+        "Lectuer": [
+          "Lectuer",
+          "主讲人"
+        ],
+        "Description": [
+          "Description",
+          "简介"
+        ],
+        "Hour": [
+          "Hour",
+          "课时"
+        ],
+        "CreditHour": [
+          "CreditHour",
+          "学分"
+        ],
+        "Source": [
+          "Source",
+          "来源"
+        ],
+        "SourceId": [
+          "SourceId",
+          "公共资源引用编号"
+        ],
+        "FeeSource": [
+          "FeeSource",
+          "资源费"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "创建时间"
+        ],
+        "Status": [
+          "Status",
+          "状态"
+        ],
+        "Creator": [
+          "Creator",
+          "课程创建人"
+        ],
+        "ElectiveType": [
+          "ElectiveType"
+        ],
+        "OrderId": [
+          "OrderId",
+          "排序号"
+        ],
+        "CoursewareSource": [
+          "0 未选择课件 1 学威宝课件 2 其他课件",
+          "CoursewareSource"
+        ],
+        "IsShared": [
+          "0 不向下级机构共享 1 向下级机构共享",
+          "IsShared"
+        ],
+        "StarLevel": [
+          "StarLevel",
+          "课程的星级评定"
+        ],
+        "Integral": [
+          "Integral",
+          "积分"
+        ],
+        "ImageUrl": [
+          "ImageUrl",
+          "图片"
+        ],
+        "Hots": [
+          "Hots",
+          "热度"
+        ],
+        "LecType": [
+          "0 外部讲师 1 内部讲师",
+          "LecType"
+        ],
+        "LecID": [
+          "LecID",
+          "讲师ID"
+        ],
+        "Price": [
+          "Price",
+          "单价"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_Course_Level": {
+      "domain": "training",
+      "label": "课程评分记录表",
+      "aliases": [
+        "Student_Course_Level",
+        "课程评分记录表",
+        "课程评分记录"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员编号",
+          "用户编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "CourseId": [
+          "CourseId",
+          "课程编号",
+          "课程"
+        ],
+        "StarLevel": [
+          "StarLevel",
+          "打分结果"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "记录时间"
+        ],
+        "Status": [
+          "Status",
+          "状态"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_Integral": {
+      "domain": "training",
+      "label": "学员积分记录表",
+      "aliases": [
+        "Student_Integral",
+        "学员积分记录表",
+        "学员积分记录"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员编号",
+          "用户编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "DeptId": [
+          "DeptId",
+          "部门编号"
+        ],
+        "IntegralType": [
+          "IntegralType",
+          "积分类别"
+        ],
+        "TriggerID": [
+          "TriggerID",
+          "关联标识"
+        ],
+        "IntegralValue": [
+          "IntegralValue",
+          "积分值"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "记录时间"
+        ],
+        "Desc": [
+          "Desc",
+          "积分描述"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Courseware_Info": {
+      "domain": "training",
+      "label": "课件表",
+      "aliases": [
+        "Courseware_Info",
+        "课件表",
+        "课件"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "Name": [
+          "Name",
+          "课件名称",
+          "名称"
+        ],
+        "CourseId": [
+          "CourseId",
+          "课程编号",
+          "课程"
+        ],
+        "Url": [
+          "课件网址",
+          "Url"
+        ],
+        "DownLoadUrl": [
+          "DownLoadUrl",
+          "课件下载地址"
+        ],
+        "ContentType": [
+          "ContentType",
+          "课件类型"
+        ],
+        "DownloadType": [
+          "DownloadType",
+          "下载方式"
+        ],
+        "DeleteType": [
+          "DeleteType",
+          "删除方式"
+        ],
+        "DeleteDaysLimit": [
+          "DeleteDaysLimit",
+          "N天数后删除"
+        ],
+        "HideType": [
+          "HideType",
+          "隐藏方式"
+        ],
+        "ReadType": [
+          "ReadType",
+          "阅读方式"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "创建时间",
+          "注册时间"
+        ],
+        "Creator": [
+          "Creator",
+          "课件创建人"
+        ],
+        "CGuid": [
+          "学威课件GUID",
+          "CGuid"
+        ],
+        "OrderID": [
+          "OrderID",
+          "课件排序ID"
+        ],
+        "MPlayUrl": [
+          "移动设备上的播放路径",
+          "MPlayUrl"
+        ],
+        "MDownloadUrl": [
+          "MDownloadUrl",
+          "移动设备上的下载路径"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Courseware_Login_Info": {
+      "domain": "training",
+      "label": "课件学习记录表 LGS 2008 1 8",
+      "aliases": [
+        "Courseware_Login_Info",
+        "课件学习记录表 LGS 2008 1 8",
+        "课件学习记录 LGS 2008 1 8",
+        "2008-1-8",
+        "课件学习记录",
+        "2008",
+        "LGS"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "CoursewareId": [
+          "CoursewareId",
+          "课件的ID号",
+          "课件编号",
+          "课件"
+        ],
+        "Status": [
+          "0 在读 1 完成",
+          "Status",
+          "状态"
+        ],
+        "BeginTime": [
+          "BeginTime",
+          "开始学习课件的时间",
+          "开始时间"
+        ],
+        "EndTime": [
+          "完成学习课件的时间",
+          "EndTime",
+          "结束时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_Courseware_Log": {
+      "domain": "training",
+      "label": "学威课件学习记录表",
+      "aliases": [
+        "Student_Courseware_Log",
+        "学威课件学习记录表",
+        "学威课件学习记录"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "CGuid": [
+          "学威课件GUID",
+          "CGuid"
+        ],
+        "Progress": [
+          "当前学习已经完成的节点ID集合 用",
+          "Progress"
+        ],
+        "Status": [
+          "0 在读 1 完成",
+          "Status",
+          "状态"
+        ],
+        "CurrentID": [
+          "CurrentID",
+          "当前节点ID"
+        ],
+        "CurrentName": [
+          "CurrentName",
+          "当前节点名称"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "触发时间"
+        ],
+        "TrainTime": [
+          "从开始学习到当前触发的学习时长",
+          "TrainTime"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_Courseware_Info": {
+      "domain": "training",
+      "label": "学员课件学习记录",
+      "aliases": [
+        "Student_Courseware_Info",
+        "学员课件学习记录"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "CoursewareId": [
+          "CoursewareId",
+          "课件ID",
+          "课件编号",
+          "课件"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "Status": [
+          "课件状态 0 在学 1 完成",
+          "Status",
+          "状态"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序列号",
+          "排序号",
+          "序号"
+        ],
+        "StudyTime": [
+          "StudyTime",
+          "学习用时"
+        ]
+      }
+    },
+    "Login_Info": {
+      "domain": "training",
+      "label": "登陆明细表",
+      "aliases": [
+        "Login_Info",
+        "登陆明细表",
+        "登陆明细"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "LoginDateTime": [
+          "LoginDateTime",
+          "登录时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Repository_Category_Info": {
+      "domain": "training",
+      "label": "知识库分类表",
+      "aliases": [
+        "Repository_Category_Info",
+        "知识库分类表",
+        "知识库分类"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "Name": [
+          "Name",
+          "分类名称",
+          "名称"
+        ],
+        "ParentId": [
+          "ParentId",
+          "上级分类编号"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "创建时间",
+          "注册时间"
+        ],
+        "Creator": [
+          "Creator",
+          "分类创建人"
+        ],
+        "Path": [
+          "直系上级分类ID路径",
+          "Path"
+        ],
+        "OrderId": [
+          "OrderId",
+          "序号"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Repository_Info": {
+      "domain": "training",
+      "label": "知识库表",
+      "aliases": [
+        "Repository_Info",
+        "知识库表",
+        "知识库"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "Name": [
+          "Name",
+          "资料名称",
+          "名称"
+        ],
+        "RespositoryCategoryID": [
+          "RespositoryCategoryID",
+          "资料分类表"
+        ],
+        "Url": [
+          "课件网址",
+          "Url"
+        ],
+        "ContentType": [
+          "ContentType",
+          "课件类型"
+        ],
+        "DownloadType": [
+          "DownloadType",
+          "下载方式"
+        ],
+        "DeleteType": [
+          "DeleteType",
+          "删除方式"
+        ],
+        "DeleteDaysLimit": [
+          "DeleteDaysLimit",
+          "N天数后删除"
+        ],
+        "HideType": [
+          "HideType",
+          "隐藏方式"
+        ],
+        "ReadType": [
+          "ReadType",
+          "阅读方式"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "创建时间",
+          "注册时间"
+        ],
+        "Creator": [
+          "Creator",
+          "知识库创建人"
+        ],
+        "OrderId": [
+          "OrderId",
+          "排序ID"
+        ],
+        "ImgUrl": [
+          "ImgUrl",
+          "图片网址"
+        ],
+        "AuditorId": [
+          "AuditorId",
+          "审核人ID"
+        ],
+        "AuditTime": [
+          "AuditTime",
+          "审核日期"
+        ],
+        "Status": [
+          "0 待审核状态 1 正式入库 -1 退回",
+          "Status",
+          "状态"
+        ],
+        "Introduction": [
+          "Introduction",
+          "资料简介"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_Repository_Info": {
+      "domain": "training",
+      "label": "学员知识库评价表",
+      "aliases": [
+        "Student_Repository_Info",
+        "学员知识库评价表",
+        "学员知识库评价"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "RepositoryId": [
+          "RepositoryId",
+          "知识素材ID"
+        ],
+        "Level": [
+          "Level",
+          "星级"
+        ],
+        "Remark": [
+          "Remark",
+          "评语"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "发表评价时间",
+          "创建时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_CourseInfo": {
+      "domain": "training",
+      "label": "学员课程表",
+      "aliases": [
+        "Student_CourseInfo",
+        "学员课程表",
+        "学员课程"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "CourseId": [
+          "CourseId",
+          "课程编号",
+          "课程"
+        ],
+        "BeginTime": [
+          "学员和课程第一次建立关系的时间",
+          "BeginTime",
+          "开始时间"
+        ],
+        "EndTime": [
+          "学员完成课程的时间",
+          "EndTime",
+          "结束时间"
+        ],
+        "StudyTime": [
+          "StudyTime",
+          "学时"
+        ],
+        "CreditHour": [
+          "CreditHour",
+          "学分"
+        ],
+        "Status": [
+          "Status",
+          "状态"
+        ],
+        "ActionTime": [
+          "ActionTime",
+          "最后一次学习时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Elective_Info": {
+      "domain": "training",
+      "label": "课程选修情况设定表",
+      "aliases": [
+        "Elective_Info",
+        "课程选修情况设定表",
+        "课程选修情况设定"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "CourseId": [
+          "CourseId",
+          "课程编号",
+          "课程"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_Course_Log": {
+      "domain": "training",
+      "label": "学员学习课程日志表",
+      "aliases": [
+        "Student_Course_Log",
+        "学员学习课程日志表",
+        "学员学习课程日志",
+        "学员课程学习日志",
+        "课程学习日志",
+        "学习日志"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "CourseId": [
+          "CourseId",
+          "课程编号",
+          "课程"
+        ],
+        "BeginTime": [
+          "BeginTime",
+          "本次开始学习时间",
+          "开始时间"
+        ],
+        "EndTime": [
+          "本次结束学习时间",
+          "EndTime",
+          "结束时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Study_Class_Course_Info": {
+      "domain": "training",
+      "label": "学习班课程表",
+      "aliases": [
+        "Study_Class_Course_Info",
+        "学习班课程表",
+        "学习班课程"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "StudyClassId": [
+          "StudyClassId",
+          "学习班编号"
+        ],
+        "CourseId": [
+          "CourseId",
+          "课程编号",
+          "课程"
+        ],
+        "Status": [
+          "Status",
+          "状态"
+        ],
+        "Is": [
+          "Is",
+          "必修"
+        ],
+        "OrderId": [
+          "OrderId",
+          "顺序号"
+        ],
+        "IsReviw": [
+          "0 预习 1 复习 2 面授课",
+          "IsReviw"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Study_Class_Info": {
+      "domain": "training",
+      "label": "学习班表",
+      "aliases": [
+        "Study_Class_Info",
+        "学习班表",
+        "学习班"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "Name": [
+          "学习班名称",
+          "Name",
+          "名称"
+        ],
+        "CreditHour": [
+          "CreditHour",
+          "毕业学分"
+        ],
+        "Periods": [
+          "Periods",
+          "学习周期"
+        ],
+        "HavingExamination": [
+          "HavingExamination",
+          "是否有结业考试"
+        ],
+        "ExamineId": [
+          "ExamineId",
+          "结业考试编号"
+        ],
+        "Creator": [
+          "Creator",
+          "创建人编号"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "创建时间"
+        ],
+        "Status": [
+          "Status",
+          "状态"
+        ],
+        "UnExamPassed": [
+          "是否毕业考试不及格按肄业处理 0 否 1 是",
+          "UnExamPassed"
+        ],
+        "DelayGraduate": [
+          "DelayGraduate",
+          "是否学员延期完成学业"
+        ],
+        "IsShared": [
+          "0 不向下级机构共享 1 向下级机构共享",
+          "IsShared"
+        ],
+        "Description": [
+          "Description",
+          "简介"
+        ],
+        "ImageUrl": [
+          "ImageUrl",
+          "图片"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Lectuer_Info": {
+      "domain": "training",
+      "label": "培训讲师表",
+      "aliases": [
+        "Lectuer_Info",
+        "培训讲师表",
+        "培训讲师"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Type": [
+          "0 内部讲师 1 外部讲师",
+          "Type",
+          "类型"
+        ],
+        "ProfessionalType": [
+          "ProfessionalType",
+          "专业领域"
+        ],
+        "Email": [
+          "Email",
+          "电子邮箱"
+        ],
+        "Mobile": [
+          "Mobile",
+          "手机"
+        ],
+        "Education": [
+          "Education",
+          "学历"
+        ],
+        "Company": [
+          "Company",
+          "所属单位"
+        ],
+        "code": [
+          "code",
+          "身份证号"
+        ],
+        "sex": [
+          "sex",
+          "性别"
+        ],
+        "birthday": [
+          "birthday",
+          "出生年月"
+        ],
+        "nation": [
+          "nation",
+          "民族"
+        ],
+        "TeacherLevel": [
+          "TeacherLevel",
+          "教师级别"
+        ],
+        "TalentLevel": [
+          "TalentLevel",
+          "人才级别"
+        ],
+        "RecommendCompany": [
+          "RecommendCompany",
+          "推荐机构"
+        ],
+        "ProfessionalDir": [
+          "ProfessionalDir",
+          "专业方向"
+        ],
+        "Specialty": [
+          "Specialty",
+          "个人专长"
+        ],
+        "Result": [
+          "Result",
+          "个人成果"
+        ],
+        "Award": [
+          "Award",
+          "奖惩情况"
+        ],
+        "Writings": [
+          "Writings",
+          "发表文章情况"
+        ],
+        "Research": [
+          "Research",
+          "参与科研课题情况"
+        ],
+        "Teach": [
+          "Teach",
+          "授课经历"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Study_Class_Student_Info": {
+      "domain": "training",
+      "label": "学习班学员表",
+      "aliases": [
+        "Study_Class_Student_Info",
+        "学习班学员表",
+        "学习班学员"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "StudyClassId": [
+          "StudyClassId",
+          "学习班编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "CreditHour": [
+          "CreditHour",
+          "学分"
+        ],
+        "Status": [
+          "Status",
+          "状态"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Study_Class_Apply_Info": {
+      "domain": "training",
+      "label": "学习班报名申请表",
+      "aliases": [
+        "Study_Class_Apply_Info",
+        "学习班报名申请表",
+        "学习班报名申请"
+      ],
+      "fields": {
+        "Id": [
+          "主键ID",
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudyClassID": [
+          "StudyClassID",
+          "学习班ID"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "Status": [
+          "Status",
+          "0为申请中",
+          "状态"
+        ],
+        "AuditorId": [
+          "AuditorId",
+          "审核人"
+        ],
+        "AuditTime": [
+          "AuditTime",
+          "审核时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Scorm_Event": {
+      "domain": "training",
+      "label": "Scorm课件活动事件表",
+      "aliases": [
+        "Scorm课件活动事件表",
+        "Scorm_Event",
+        "Scorm课件活动事件"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "CoursewareId": [
+          "CoursewareId",
+          "课件ID",
+          "课件编号",
+          "课件"
+        ],
+        "Identifier": [
+          "Identifier",
+          "章节标识"
+        ],
+        "KeyName": [
+          "KeyName",
+          "事件名"
+        ],
+        "KeyValue": [
+          "KeyValue",
+          "事件数据"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "OffTrain_Info": {
+      "domain": "training",
+      "label": "离线培训班",
+      "aliases": [
+        "OffTrain_Info离线培训班",
+        "OffTrain_Info",
+        "离线培训班",
+        "离线培训",
+        "线下培训班",
+        "线下培训"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "机构ID FK",
+          "UserId",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "TrainYear": [
+          "TrainYear",
+          "培训年度"
+        ],
+        "Type": [
+          "Type",
+          "培训类别",
+          "类型"
+        ],
+        "Name": [
+          "培训班名称",
+          "Name",
+          "名称"
+        ],
+        "Site": [
+          "Site",
+          "培训地点"
+        ],
+        "Sponsor": [
+          "Sponsor",
+          "主办单位"
+        ],
+        "CreditHour": [
+          "CreditHour",
+          "学分"
+        ],
+        "Level": [
+          "Level",
+          "培训级别"
+        ],
+        "Fee": [
+          "Fee",
+          "学费"
+        ],
+        "Flag": [
+          "Flag",
+          "培训类型"
+        ],
+        "BeginDate": [
+          "BeginDate",
+          "培训开始日期"
+        ],
+        "EndDate": [
+          "EndDate",
+          "培训结束日期"
+        ],
+        "Description": [
+          "Description",
+          "培训班简介"
+        ],
+        "Notes": [
+          "Notes",
+          "备注"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_OffTrain_Info": {
+      "domain": "training",
+      "label": "学员离线学习班学习表",
+      "aliases": [
+        "Student_OffTrain_Info",
+        "学员离线学习班学习表",
+        "学员离线学习班学习"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "OffTrainId": [
+          "OffTrainId"
+        ],
+        "BeginDate": [
+          "BeginDate",
+          "培训开始日期"
+        ],
+        "EndDate": [
+          "EndDate",
+          "培训结束日期"
+        ],
+        "Status": [
+          "培训状态 0 未结业 1 已结业",
+          "Status",
+          "状态"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Study_Plan_Info": {
+      "domain": "training",
+      "label": "培训计划表",
+      "aliases": [
+        "Study_Plan_Info",
+        "培训计划表",
+        "培训计划"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户",
+          "机构ID",
+          "机构编号",
+          "机构"
+        ],
+        "Name": [
+          "Name",
+          "计划名称",
+          "名称"
+        ],
+        "BeginTime": [
+          "BeginTime",
+          "计划开始日期",
+          "开始时间"
+        ],
+        "EndTime": [
+          "EndTime",
+          "计划结束日期",
+          "结束时间"
+        ],
+        "RequireCredithour": [
+          "RequireCredithour",
+          "学分要求"
+        ],
+        "Creator": [
+          "Creator",
+          "计划创建人ID"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建日期",
+          "创建时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Course_Discuss_Info": {
+      "domain": "training",
+      "label": "课程讨论信息表",
+      "aliases": [
+        "Course_Discuss_Info",
+        "课程讨论信息表",
+        "课程讨论信息"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "CourseId": [
+          "CourseId",
+          "课程ID",
+          "课程编号",
+          "课程"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "Content": [
+          "Content",
+          "讨论内容"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "序号 自增长s",
+          "排序号",
+          "序号"
+        ],
+        "Status": [
+          "0 不公开 1 公开",
+          "Status",
+          "状态"
+        ]
+      }
+    },
+    "OffTrain_Discuss_Info": {
+      "domain": "training",
+      "label": "面授课程讨论信息表",
+      "aliases": [
+        "OffTrain_Discuss_Info",
+        "面授课程讨论信息表",
+        "面授课程讨论信息"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "OfftrainId": [
+          "OfftrainId",
+          "面授课程ID"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "Content": [
+          "Content",
+          "讨论内容"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "序号 自增长s",
+          "排序号",
+          "序号"
+        ],
+        "Status": [
+          "0 不公开 1 公开",
+          "Status",
+          "状态"
+        ]
+      }
+    },
+    "Student_OffTrain_Level": {
+      "domain": "training",
+      "label": "面授课程评价打分表",
+      "aliases": [
+        "Student_OffTrain_Level",
+        "面授课程评价打分表",
+        "面授课程评价打分"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "OfftrainId": [
+          "OfftrainId",
+          "面授课程ID"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "Content": [
+          "Content",
+          "讨论内容"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ],
+        "StarLevel": [
+          "StarLevel",
+          "打分"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "序号 自增长s",
+          "排序号",
+          "序号"
+        ],
+        "Status": [
+          "0 不公开 1 公开",
+          "Status",
+          "状态"
+        ]
+      }
+    },
+    "Meeting_Student_Info": {
+      "domain": "training",
+      "label": "直播课堂人员安排表",
+      "aliases": [
+        "Meeting_Student_Info",
+        "直播课堂人员安排表",
+        "直播课堂人员安排"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "MeetingID": [
+          "MeetingID",
+          "直播课堂ID"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "安排时间"
+        ]
+      }
+    },
+    "Net_Meeting": {
+      "domain": "training",
+      "label": "直播课堂",
+      "aliases": [
+        "Net_Meeting",
+        "直播课堂"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Title": [
+          "Title",
+          "课程主题",
+          "主题",
+          "标题"
+        ],
+        "StartTime": [
+          "StartTime",
+          "开始时间"
+        ],
+        "EndTime": [
+          "EndTime",
+          "结束时间"
+        ],
+        "OtherC1": [
+          "OtherC1",
+          "主持人ID"
+        ],
+        "OtherC2": [
+          "OtherC2",
+          "主讲人ID"
+        ],
+        "ImageUrl": [
+          "ImageUrl",
+          "图片地址"
+        ],
+        "VideoUrl": [
+          "VideoUrl",
+          "视频回看路径"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Course_Assistant_Info": {
+      "domain": "training",
+      "label": "在线课程辅导员表",
+      "aliases": [
+        "Course_Assistant_Info",
+        "在线课程辅导员表",
+        "在线课程辅导员"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "CourseId": [
+          "CourseId",
+          "课程Id",
+          "课程编号",
+          "课程"
+        ],
+        "StudentId": [
+          "StudentId",
+          "人员Id",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "创建人Id"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ]
+      }
+    },
+    "OffTrain_Assistant_Info": {
+      "domain": "training",
+      "label": "面授课程辅导员表",
+      "aliases": [
+        "OffTrain_Assistant_Info",
+        "面授课程辅导员表",
+        "面授课程辅导员"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "OffTrainId": [
+          "OffTrainId",
+          "面授课程Id"
+        ],
+        "StudentId": [
+          "StudentId",
+          "人员Id",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "创建人Id"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ]
+      }
+    },
+    "BBSBoardInfo": {
+      "domain": "forum",
+      "label": "论坛版块表",
+      "aliases": [
+        "BBSBoardInfo",
+        "论坛版块表",
+        "论坛版块"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户",
+          "机构ID",
+          "机构编号",
+          "机构"
+        ],
+        "BordName": [
+          "BordName",
+          "版块名称"
+        ],
+        "MasterIDList": [
+          "MasterIDList",
+          "版主ID集合"
+        ],
+        "MasterNameList": [
+          "MasterNameList",
+          "版主名称集合"
+        ],
+        "Notes": [
+          "Notes",
+          "备注"
+        ],
+        "Creator": [
+          "Creator",
+          "版块创建人ID"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "版块创建日期",
+          "创建时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "BBSTopicInfo": {
+      "domain": "forum",
+      "label": "主题表",
+      "aliases": [
+        "BBSTopicInfo",
+        "主题表",
+        "主题"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "BoardID": [
+          "BoardID",
+          "版块ID"
+        ],
+        "Title": [
+          "Title",
+          "主题标题",
+          "主题",
+          "标题"
+        ],
+        "Subject": [
+          "Subject",
+          "主题内容"
+        ],
+        "Creator": [
+          "Creator",
+          "发帖人ID"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发帖日期"
+        ],
+        "IsTop": [
+          "是否置顶 0 不置顶 1 置顶",
+          "IsTop"
+        ],
+        "IsLock": [
+          "是否锁贴 0 不锁贴 1 锁贴",
+          "IsLock"
+        ],
+        "IpAddress": [
+          "IpAddress",
+          "发帖人IP地址"
+        ],
+        "Invitees": [
+          "被要求专家集合 多个专家用",
+          "Invitees"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "BBSReplayInfo": {
+      "domain": "forum",
+      "label": "回帖表",
+      "aliases": [
+        "BBSReplayInfo",
+        "回帖表",
+        "回帖"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "TopicID": [
+          "TopicID",
+          "主题ID"
+        ],
+        "Subject": [
+          "Subject",
+          "回帖内容"
+        ],
+        "IpAddress": [
+          "IpAddress",
+          "回帖人IP地址"
+        ],
+        "Creator": [
+          "Creator",
+          "回帖人ID"
+        ],
+        "PostTime": [
+          "PostTime",
+          "回帖日期"
+        ],
+        "IsBest": [
+          "0 普通回帖 1 最佳回帖",
+          "IsBest"
+        ],
+        "Weight": [
+          "权重 用于踩和顶",
+          "Weight"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "User_Option_Info": {
+      "domain": "configuration",
+      "label": "企业用户配置表",
+      "aliases": [
+        "User_Option_Info",
+        "企业用户配置表",
+        "企业用户配置"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户编号",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "Type": [
+          "0 普通参数 1 帐户属性参数配置",
+          "Type",
+          "类型"
+        ],
+        "OptionName": [
+          "OptionName",
+          "配置参数名称"
+        ],
+        "OptionValue": [
+          "OptionValue",
+          "配置参数值"
+        ],
+        "Notes": [
+          "备用说明字段",
+          "Notes"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Email_Info": {
+      "domain": "notification",
+      "label": "Email邮件",
+      "aliases": [
+        "Email_Info",
+        "Email邮件"
+      ],
+      "fields": {
+        "ID": [
+          "ID",
+          "主键",
+          "编号"
+        ],
+        "StudentName": [
+          "StudentName",
+          "邮件接收人帐号"
+        ],
+        "StudentActualName": [
+          "StudentActualName",
+          "邮件接收人姓名"
+        ],
+        "StudentEmail": [
+          "StudentEmail",
+          "邮件接收人邮箱"
+        ],
+        "Subject": [
+          "Subject",
+          "邮件标题"
+        ],
+        "MessageBody": [
+          "MessageBody",
+          "邮件内容"
+        ],
+        "Status": [
+          "Status",
+          "状态"
+        ],
+        "SenderId": [
+          "SenderId",
+          "发送人ID"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "邮件产生时间",
+          "创建时间"
+        ],
+        "SendTime": [
+          "SendTime",
+          "邮件发送时间"
+        ],
+        "ErrorMessage": [
+          "ErrorMessage",
+          "邮件发送失败信息"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Sys_Mail_Receivers_Info": {
+      "domain": "notification",
+      "label": "站内邮件收件人信息",
+      "aliases": [
+        "Sys_Mail_Receivers_Info",
+        "站内邮件收件人信息"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "MailId": [
+          "MailId",
+          "邮件Id"
+        ],
+        "ReceiverId": [
+          "ReceiverId",
+          "收件人Id"
+        ],
+        "IsRead": [
+          "0 未读 1 已读",
+          "IsRead"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Sys_Mail_Info": {
+      "domain": "notification",
+      "label": "站内邮件",
+      "aliases": [
+        "Sys_Mail_Info",
+        "站内邮件"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Subject": [
+          "Subject",
+          "邮件主题"
+        ],
+        "Content": [
+          "Content",
+          "邮件内容"
+        ],
+        "Author": [
+          "Author",
+          "发件人"
+        ],
+        "MsgType": [
+          "0 管理员对全院发布的消息",
+          "MsgType"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发送时间"
+        ],
+        "IsAuthorDelete": [
+          "IsAuthorDelete",
+          "是否被发件人删除了"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Role_Info": {
+      "domain": "system",
+      "label": "角色表",
+      "aliases": [
+        "Role_Info",
+        "角色表",
+        "角色"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "USERID": [
+          "USERID",
+          "企业用户",
+          "机构Id",
+          "机构编号",
+          "机构"
+        ],
+        "NAME": [
+          "NAME",
+          "角色名称",
+          "名称"
+        ],
+        "SERIALNO": [
+          "SERIALNO",
+          "排序号",
+          "自增长",
+          "序号"
+        ]
+      }
+    },
+    "Student_Role_Info": {
+      "domain": "system",
+      "label": "学员角色分配表",
+      "aliases": [
+        "Student_Role_Info",
+        "学员角色分配表",
+        "学员角色分配"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员Id",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "RoleId": [
+          "RoleId",
+          "角色Id"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Sys_Access_Assign_Info": {
+      "domain": "system",
+      "label": "系统权限分配表",
+      "aliases": [
+        "Sys_Access_Assign_Info",
+        "系统权限分配表",
+        "系统权限分配"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "RoleId": [
+          "RoleId",
+          "角色Id"
+        ],
+        "SysAccessId": [
+          "SysAccessId",
+          "系统权限编号"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Sys_Access_Info": {
+      "domain": "system",
+      "label": "系统权限表",
+      "aliases": [
+        "Sys_Access_Info",
+        "系统权限表",
+        "系统权限"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Name": [
+          "Name",
+          "权限名称",
+          "名称"
+        ],
+        "ParentId": [
+          "ParentId",
+          "上级系统权限编号"
+        ],
+        "Url": [
+          "本功能点的连接地址",
+          "Url"
+        ],
+        "UseRange": [
+          "UseRange"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Short_Cut_Info": {
+      "domain": "system",
+      "label": "快捷操作表",
+      "aliases": [
+        "Short_Cut_Info",
+        "快捷操作表",
+        "快捷操作"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "SysAccessId": [
+          "SysAccessId",
+          "关联权限ID"
+        ],
+        "ImageUrl": [
+          "ImageUrl",
+          "图片路径"
+        ],
+        "Name": [
+          "快捷操作名称",
+          "Name",
+          "名称"
+        ],
+        "Url": [
+          "操作指向路径",
+          "Url"
+        ],
+        "Notes": [
+          "快捷操作说明",
+          "Notes"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_Short_CutInfo": {
+      "domain": "system",
+      "label": "我的快捷操作表",
+      "aliases": [
+        "Student_Short_CutInfo",
+        "我的快捷操作表",
+        "我的快捷操作"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "ShortCutId": [
+          "ShortCutId",
+          "快捷操作ID"
+        ],
+        "StudentId": [
+          "StudentId",
+          "人员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "SysMenu_Info": {
+      "domain": "system",
+      "label": "系统前台菜单",
+      "aliases": [
+        "SysMenu_Info",
+        "系统前台菜单"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "DefaultName": [
+          "DefaultName",
+          "默认名称"
+        ],
+        "Name": [
+          "Name",
+          "名称"
+        ],
+        "SortFlag": [
+          "SortFlag",
+          "序号"
+        ],
+        "IsHomePage": [
+          "IsHomePage",
+          "是否主页"
+        ],
+        "IsEnabled": [
+          "IsEnabled",
+          "是否启用"
+        ],
+        "LinkUrl": [
+          "LinkUrl",
+          "链接地址"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Certificate_Info": {
+      "domain": "system",
+      "label": "证书表",
+      "aliases": [
+        "Certificate_Info",
+        "证书表",
+        "证书"
+      ],
+      "fields": {
+        "Id": [
+          "证书ID",
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Name": [
+          "Name",
+          "证书名称",
+          "名称"
+        ],
+        "NumberPrefix": [
+          "NumberPrefix",
+          "证书编号前缀"
+        ],
+        "Organization": [
+          "Organization",
+          "颁发机构"
+        ],
+        "ValidTime": [
+          "ValidTime",
+          "有效期限"
+        ],
+        "SerialNO": [
+          "SerialNO",
+          "排序号",
+          "序号"
+        ],
+        "ImageUrl": [
+          "ImageUrl",
+          "模板图片文件地址"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "创建人Id"
+        ],
+        "UserId": [
+          "UserId",
+          "所属机构Id",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "NameX": [
+          "证书名称X位置",
+          "NameX"
+        ],
+        "NameY": [
+          "证书名称Y位置",
+          "NameY"
+        ],
+        "NumberX": [
+          "NumberX",
+          "证书编号X"
+        ],
+        "NumberY": [
+          "NumberY",
+          "证书编号Y"
+        ],
+        "HuoZhengRenX": [
+          "HuoZhengRenX",
+          "获证人X"
+        ],
+        "HuoZhengRenY": [
+          "HuoZhengRenY",
+          "获证人Y"
+        ],
+        "OrganizationX": [
+          "OrganizationX",
+          "颁发机构X"
+        ],
+        "OrganizationY": [
+          "OrganizationY",
+          "颁发机构Y"
+        ],
+        "CreateTimeX": [
+          "CreateTimeX",
+          "颁发时间X"
+        ],
+        "CreateTimeY": [
+          "CreateTimeY",
+          "颁发时间Y"
+        ],
+        "ImgX": [
+          "ImgX",
+          "照片X"
+        ],
+        "ImgY": [
+          "ImgY",
+          "照片Y"
+        ],
+        "ImgHeight": [
+          "ImgHeight",
+          "照片高度"
+        ],
+        "ImgWidth": [
+          "ImgWidth",
+          "照片宽度"
+        ],
+        "FontName": [
+          "FontName",
+          "字体"
+        ],
+        "FontSize": [
+          "FontSize",
+          "字号"
+        ],
+        "ExpireTimeX": [
+          "ExpireTimeX",
+          "有效期X"
+        ],
+        "ExpireTimeY": [
+          "ExpireTimeY",
+          "有效期Y"
+        ],
+        "CodeX": [
+          "CodeX",
+          "身份证X"
+        ],
+        "CodeY": [
+          "CodeY",
+          "身份证Y"
+        ],
+        "ScoreX": [
+          "ScoreX",
+          "考试成绩X"
+        ],
+        "ScoreY": [
+          "ScoreY",
+          "考试成绩Y"
+        ]
+      }
+    },
+    "Point_Action": {
+      "domain": "system",
+      "label": "积分配置表",
+      "aliases": [
+        "Point_Action",
+        "积分配置表",
+        "积分配置"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "ActionId": [
+          "ActionId",
+          "类型ID"
+        ],
+        "Point": [
+          "Point",
+          "积分制"
+        ],
+        "DayLimit": [
+          "DayLimit",
+          "当日单项积分上限"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_Point_Log": {
+      "domain": "system",
+      "label": "积分日志表表",
+      "aliases": [
+        "Student_Point_Log",
+        "积分日志表表",
+        "积分日志",
+        "积分变动记录",
+        "积分变更记录",
+        "积分流水"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "人员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "ActionID": [
+          "ActionID"
+        ],
+        "PointNum": [
+          "PointNum",
+          "获取的积分值"
+        ],
+        "LinkObject": [
+          "LinkObject",
+          "操作对象 比如"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发生时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "序号s",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Group_Info": {
+      "domain": "system",
+      "label": "群组表",
+      "aliases": [
+        "Group_Info",
+        "群组表",
+        "群组"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Name": [
+          "Name",
+          "群组名称",
+          "名称"
+        ],
+        "Note": [
+          "Note",
+          "说明"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建日期",
+          "创建时间"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "创建人ID"
+        ],
+        "UserId": [
+          "UserId",
+          "所属机构ID",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序号ID",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Group_Student_Info": {
+      "domain": "system",
+      "label": "群组人员安排表",
+      "aliases": [
+        "Group_Student_Info",
+        "群组人员安排表",
+        "群组人员安排"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "OldUserId": [
+          "OldUserId",
+          "Varchar"
+        ],
+        "OldUserName": [
+          "OldUserName",
+          "Varchar"
+        ],
+        "NewUserId": [
+          "NewUserId",
+          "Varchar"
+        ],
+        "NewUserName": [
+          "NewUserName",
+          "Varchar"
+        ],
+        "ResourceType": [
+          "ResourceType",
+          "Int"
+        ],
+        "ResourceId": [
+          "ResourceId",
+          "Varchar"
+        ],
+        "ResourceName": [
+          "ResourceName",
+          "Varchar"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "Varchar"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "datetime",
+          "创建时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序号ID",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Move_Resource_Log_Info": {
+      "domain": "system",
+      "label": "删除机构时资源迁移记录表",
+      "aliases": [
+        "Move_Resource_Log_Info",
+        "删除机构时资源迁移记录表",
+        "删除机构时资源迁移记录"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "人员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "GroupId": [
+          "GroupId",
+          "群组ID"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序号ID",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_Certificate_Info": {
+      "domain": "system",
+      "label": "学员获取证书表",
+      "aliases": [
+        "Student_Certificate_Info",
+        "学员获取证书表",
+        "学员获取证书"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员ID",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "CertificateId": [
+          "CertificateId",
+          "证书ID"
+        ],
+        "CertificateName": [
+          "CertificateName",
+          "证书名称"
+        ],
+        "CertificateNumber": [
+          "CertificateNumber",
+          "证书编号"
+        ],
+        "Organization": [
+          "Organization",
+          "颁发机构"
+        ],
+        "AwardTime": [
+          "AwardTime",
+          "颁发日期"
+        ],
+        "Tk_Cl_Id": [
+          "Tk_Cl_Id",
+          "试卷ID"
+        ],
+        "ExamName": [
+          "ExamName",
+          "考试名称"
+        ],
+        "Score": [
+          "Score",
+          "考试分数",
+          "分数",
+          "得分"
+        ],
+        "ValidTime": [
+          "ValidTime",
+          "有效期"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Interest_Category_Info": {
+      "domain": "system",
+      "label": "标签分类表",
+      "aliases": [
+        "Interest_Category_Info",
+        "标签分类表",
+        "标签分类"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Name": [
+          "标签分类名称",
+          "Name",
+          "名称"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "发布人Id"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Interest_Info": {
+      "domain": "system",
+      "label": "标签表",
+      "aliases": [
+        "Interest_Info",
+        "标签表",
+        "标签"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Name": [
+          "Name",
+          "标签名称",
+          "名称"
+        ],
+        "InterestCategoryId": [
+          "InterestCategoryId",
+          "标签分类Id"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "发布人Id"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Interest_Course_Info": {
+      "domain": "system",
+      "label": "课程标签关联表",
+      "aliases": [
+        "Interest_Course_Info",
+        "课程标签关联表",
+        "课程标签关联"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "InterestId": [
+          "InterestId",
+          "标签Id"
+        ],
+        "CourseId": [
+          "CourseId",
+          "课程Id",
+          "课程编号",
+          "课程"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "发布人Id"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Student_Interest_Info": {
+      "domain": "system",
+      "label": "学员自选标签 兴趣",
+      "aliases": [
+        "Student_Interest_Info",
+        "学员自选标签 兴趣",
+        "学员自选标签",
+        "兴趣"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "InterestId": [
+          "InterestId",
+          "标签Id"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员Id",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "发布人Id"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Interest_Repository_Info": {
+      "domain": "system",
+      "label": "知识库素材标签表",
+      "aliases": [
+        "Interest_Repository_Info",
+        "知识库素材标签表",
+        "知识库素材标签"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "InterestId": [
+          "InterestId",
+          "标签Id"
+        ],
+        "RepositoryId": [
+          "RepositoryId",
+          "素材Id"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "发布人Id"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "News_Type_Info": {
+      "domain": "news",
+      "label": "新闻栏目表",
+      "aliases": [
+        "News_Type_Info",
+        "新闻栏目表",
+        "新闻栏目"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Name": [
+          "Name",
+          "栏目名称",
+          "名称"
+        ],
+        "ServerNo": [
+          "ServerNo",
+          "序号"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "News_Info": {
+      "domain": "news",
+      "label": "新闻资讯表",
+      "aliases": [
+        "News_Info",
+        "新闻资讯表",
+        "新闻资讯"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "NewsTypeId": [
+          "NewsTypeId",
+          "栏目类型标识"
+        ],
+        "Subject": [
+          "Subject",
+          "标题"
+        ],
+        "MessageBody": [
+          "MessageBody",
+          "内容"
+        ],
+        "ImageUrl": [
+          "图片新闻的图片地址",
+          "ImageUrl"
+        ],
+        "ImageFlag": [
+          "ImageFlag",
+          "是否图片新闻"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "创建时间"
+        ],
+        "Status": [
+          "状态 0 下架状态 1 上架状态",
+          "Status",
+          "状态"
+        ],
+        "Creater": [
+          "Creater",
+          "创建人"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户",
+          "所属机构",
+          "机构编号",
+          "机构"
+        ],
+        "DeptId": [
+          "DeptId",
+          "部门"
+        ],
+        "publicFlag": [
+          "publicFlag",
+          "是否需要审核"
+        ],
+        "IsTop": [
+          "IsTop",
+          "是否首页"
+        ],
+        "ApplyInfo": [
+          "ApplyInfo",
+          "审核意见"
+        ],
+        "ObjectType": [
+          "ObjectType"
+        ],
+        "ObjectId": [
+          "学习班Id|课程Id|图书馆素材Id",
+          "ObjectId"
+        ],
+        "IsQuote": [
+          "0 未被总办引用 1被总办引用",
+          "IsQuote"
+        ],
+        "IsPromise": [
+          "0 未做安全承诺 1 做了安全承诺",
+          "IsPromise"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "News_Files": {
+      "domain": "news",
+      "label": "新闻附件表",
+      "aliases": [
+        "News_Files",
+        "新闻附件表",
+        "新闻附件"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "TypeName": [
+          "TypeName",
+          "栏目名称"
+        ],
+        "FileName": [
+          "FileName",
+          "文件名"
+        ],
+        "FileUrl": [
+          "FileUrl",
+          "文件地址"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Evaluation_Group": {
+      "domain": "evaluation",
+      "label": "考评活动组",
+      "aliases": [
+        "Evaluation_Group",
+        "考评活动组"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Title": [
+          "Title",
+          "主题",
+          "名称",
+          "标题"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户",
+          "机构id",
+          "机构编号",
+          "机构"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "创建人"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Evaluation": {
+      "domain": "evaluation",
+      "label": "考评活动",
+      "aliases": [
+        "Evaluation",
+        "考评活动"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Title": [
+          "Title",
+          "活动标题",
+          "主题",
+          "标题"
+        ],
+        "Subject": [
+          "Subject",
+          "活动介绍"
+        ],
+        "LimitedTime": [
+          "LimitedTime",
+          "限时 分钟"
+        ],
+        "BeginTime": [
+          "BeginTime",
+          "开始时间"
+        ],
+        "EndTime": [
+          "EndTime",
+          "截止时间",
+          "结束时间"
+        ],
+        "UserId": [
+          "UserId",
+          "企业用户",
+          "机构id",
+          "机构编号",
+          "机构"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "创建人"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Evaluation_Items": {
+      "domain": "evaluation",
+      "label": "考评活动 评分项大类",
+      "aliases": [
+        "Evaluation_Items",
+        "考评活动 评分项大类",
+        "考评活动-评分项大类",
+        "评分项大类",
+        "考评活动"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "EvaluationId": [
+          "EvaluationId",
+          "活动id"
+        ],
+        "Item": [
+          "Item",
+          "分类名称"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ],
+        "OrderNumber": [
+          "OrderNumber",
+          "排序号"
+        ]
+      }
+    },
+    "Evaluation_Score_Item": {
+      "domain": "evaluation",
+      "label": "考评活动 评分项",
+      "aliases": [
+        "Evaluation_Score_Item考评活动-评分项",
+        "Evaluation_Score_Item",
+        "考评活动 评分项",
+        "考评活动",
+        "评分项"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "EvaluationItemId": [
+          "EvaluationItemId",
+          "分类id"
+        ],
+        "Item": [
+          "Item",
+          "评分项"
+        ],
+        "ItemType": [
+          "普通0、细则量化1",
+          "ItemType"
+        ],
+        "ItemSubject": [
+          "ItemSubject",
+          "评分项说明"
+        ],
+        "Score": [
+          "Score",
+          "分值",
+          "分数",
+          "得分"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ],
+        "OrderNumber": [
+          "OrderNumber",
+          "排序号"
+        ]
+      }
+    },
+    "Evaluation_Score_Item_Detail": {
+      "domain": "evaluation",
+      "label": "考评活动 评分项 细则",
+      "aliases": [
+        "Evaluation_Score_Item_Detail",
+        "考评活动 评分项 细则",
+        "考评活动-评分项-细则",
+        "考评活动",
+        "评分项",
+        "细则"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "EvaluationScoreItemId": [
+          "EvaluationScoreItemId",
+          "评分项id"
+        ],
+        "Item": [
+          "Item",
+          "细则"
+        ],
+        "Score": [
+          "Score",
+          "分值",
+          "分数",
+          "得分"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ],
+        "OrderNumber": [
+          "OrderNumber",
+          "排序号"
+        ]
+      }
+    },
+    "Evaluation_Expert": {
+      "domain": "evaluation",
+      "label": "考评活动 专家",
+      "aliases": [
+        "Evaluation_Expert",
+        "考评活动 专家",
+        "考评活动-专家",
+        "考评活动",
+        "专家"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "EvaluationId": [
+          "EvaluationId",
+          "活动id"
+        ],
+        "ExpertId": [
+          "ExpertId",
+          "专家Id"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Evaluation_Person": {
+      "domain": "evaluation",
+      "label": "考评活动 被评分人",
+      "aliases": [
+        "Evaluation_Person",
+        "考评活动 被评分人",
+        "考评活动-被评分人",
+        "考评活动",
+        "被评分人"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "EvaluationId": [
+          "EvaluationId",
+          "活动id"
+        ],
+        "PersonId": [
+          "PersonId",
+          "被评分人Id"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Evaluation_Result": {
+      "domain": "evaluation",
+      "label": "考评活动 评分记录",
+      "aliases": [
+        "Evaluation_Result",
+        "考评活动 评分记录",
+        "考评活动-评分记录",
+        "考评活动",
+        "评分记录"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "EvaluationId": [
+          "EvaluationId",
+          "活动id"
+        ],
+        "PersonId": [
+          "PersonId",
+          "被评分人Id"
+        ],
+        "ExpertId": [
+          "ExpertId",
+          "专家id"
+        ],
+        "BeginTime": [
+          "BeginTime",
+          "开始时间"
+        ],
+        "EndTime": [
+          "EndTime",
+          "结束时间"
+        ],
+        "TimeOut": [
+          "TimeOut",
+          "超时 秒"
+        ],
+        "DockPoints": [
+          "DockPoints",
+          "扣分"
+        ],
+        "Remark": [
+          "Remark",
+          "备注"
+        ],
+        "TotalScore": [
+          "TotalScore",
+          "总分"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ],
+        "LimitedTime": [
+          "LimitedTime",
+          "累计计时 秒"
+        ],
+        "Status": [
+          "状态 0保存 1提交",
+          "Status",
+          "状态"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Evaluation_Result_Item": {
+      "domain": "evaluation",
+      "label": "考评活动 评分记录项",
+      "aliases": [
+        "Evaluation_Result_Item",
+        "考评活动 评分记录项",
+        "考评活动-评分记录项",
+        "评分记录项",
+        "考评活动"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "ResultId": [
+          "ResultId",
+          "记录id"
+        ],
+        "ItemId": [
+          "ItemId",
+          "评分项id"
+        ],
+        "Score": [
+          "Score",
+          "分数",
+          "得分"
+        ],
+        "Remark": [
+          "Remark",
+          "备注"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "Evaluation_Result_Item_Detail": {
+      "domain": "evaluation",
+      "label": "考评活动 评分记录细则项",
+      "aliases": [
+        "Evaluation_Result_Item_Detail",
+        "考评活动 评分记录细则项",
+        "评分记录细则项",
+        "考评活动"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "ResultItemId": [
+          "ResultItemId",
+          "记录项id"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间"
+        ],
+        "DetailId": [
+          "DetailId",
+          "细则id"
+        ],
+        "ResultId": [
+          "ResultId",
+          "记录id"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "GameInfo": {
+      "domain": "game",
+      "label": "闯关游戏主题表",
+      "aliases": [
+        "GameInfo",
+        "闯关游戏主题表",
+        "闯关游戏主题"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Title": [
+          "Title",
+          "游戏主题",
+          "主题",
+          "标题"
+        ],
+        "Notes": [
+          "Notes",
+          "游戏说明"
+        ],
+        "ImageUrl": [
+          "ImageUrl",
+          "游戏图片"
+        ],
+        "UserId": [
+          "UserId",
+          "所属机构Id",
+          "企业用户",
+          "机构编号",
+          "机构"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "发布人Id"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "创建时间",
+          "发布时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序号",
+          "排序号",
+          "序号"
+        ],
+        "Status": [
+          "0 暂停 1 启用",
+          "Status",
+          "状态"
+        ]
+      }
+    },
+    "GameArrangeInfo": {
+      "domain": "game",
+      "label": "闯关游戏参加人员安排表",
+      "aliases": [
+        "GameArrangeInfo",
+        "闯关游戏参加人员安排表",
+        "闯关游戏参加人员安排"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "GameId": [
+          "GameId",
+          "游戏Id"
+        ],
+        "StudentId": [
+          "StudentId",
+          "参加人Id",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "创建时间",
+          "发布时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "GameStageInfo": {
+      "domain": "game",
+      "label": "游戏关卡配置",
+      "aliases": [
+        "GameStageInfo",
+        "游戏关卡配置"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "GameId": [
+          "GameId",
+          "游戏Id"
+        ],
+        "Title": [
+          "Title",
+          "关卡主题",
+          "主题",
+          "标题"
+        ],
+        "Stage": [
+          "Stage",
+          "关卡号"
+        ],
+        "ObjectType": [
+          "ObjectType",
+          "0 课程 1 考试"
+        ],
+        "ObjectId": [
+          "课程Id | 考试Id",
+          "ObjectId"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序用自增序号",
+          "排序号",
+          "序号"
+        ]
+      }
+    },
+    "GameStudentInfo": {
+      "domain": "game",
+      "label": "员工游戏情况表",
+      "aliases": [
+        "GameStudentInfo",
+        "员工游戏情况表",
+        "员工游戏情况"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "GameId": [
+          "GameId",
+          "游戏Id"
+        ],
+        "StudentId": [
+          "StudentId",
+          "参加人Id",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "CreatedTime": [
+          "CreatedTime",
+          "开始闯关时间",
+          "创建时间"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "自增长序号",
+          "排序号",
+          "序号"
+        ],
+        "GameStageId": [
+          "GameStageId",
+          "当前关卡Id"
+        ],
+        "Status": [
+          "0 未开始 1 正在闯关 2 通关",
+          "Status",
+          "状态"
+        ],
+        "StageNumber": [
+          "StageNumber",
+          "当前关号"
+        ],
+        "CompleteTime": [
+          "CompleteTime",
+          "通关时间"
+        ]
+      }
+    },
+    "Skill_Category_Info": {
+      "domain": "skill_matrix",
+      "label": "能力分类表",
+      "aliases": [
+        "Skill_Category_Info",
+        "能力分类表",
+        "能力分类"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Name": [
+          "Name",
+          "能力名称",
+          "名称"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "自增长",
+          "序号"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "创建人Id"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ]
+      }
+    },
+    "Skill_Info": {
+      "domain": "skill_matrix",
+      "label": "能力表",
+      "aliases": [
+        "Skill_Info",
+        "能力表",
+        "能力"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Name": [
+          "Name",
+          "能力名称",
+          "名称"
+        ],
+        "Description": [
+          "Description",
+          "描述能力"
+        ],
+        "SkillCategoryId": [
+          "SkillCategoryId",
+          "能力分类Id"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "自增长",
+          "序号"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "创建人Id"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ]
+      }
+    },
+    "Skill_Level_Info": {
+      "domain": "skill_matrix",
+      "label": "能力等级表",
+      "aliases": [
+        "Skill_Level_Info",
+        "能力等级表",
+        "能力等级"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "Name": [
+          "等级名称名称",
+          "Name",
+          "名称"
+        ],
+        "SkillLevel": [
+          "SkillLevel",
+          "等级"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "自增长",
+          "序号"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "创建人Id"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ]
+      }
+    },
+    "Duty_Skill_Require_Info": {
+      "domain": "skill_matrix",
+      "label": "岗位能力等级需求表",
+      "aliases": [
+        "Duty_Skill_Require_Info",
+        "岗位能力等级需求表",
+        "岗位能力等级需求"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "DutyId": [
+          "DutyId",
+          "岗位Id",
+          "岗位编号",
+          "岗位"
+        ],
+        "SkillId": [
+          "SkillId",
+          "技能Id"
+        ],
+        "SkillLevelId": [
+          "SkillLevelId",
+          "需要达到等级Id"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "自增长",
+          "序号"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "创建人Id"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ]
+      }
+    },
+    "Student_Skill_Info": {
+      "domain": "skill_matrix",
+      "label": "员工能力表",
+      "aliases": [
+        "Student_Skill_Info",
+        "员工能力表",
+        "员工能力"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "人员Id",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "SkillId": [
+          "SkillId",
+          "能力Id"
+        ],
+        "SkillLevelId": [
+          "SkillLevelId",
+          "当前能力等级Id"
+        ],
+        "AssessedDate": [
+          "AssessedDate",
+          "最后评定日期"
+        ],
+        "AssessorId": [
+          "AssessorId",
+          "最后评定人Id"
+        ],
+        "SourceType": [
+          "SourceType",
+          "评定来源"
+        ],
+        "ProofData": [
+          "ProofData",
+          "课程Id"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "自增长",
+          "序号"
+        ]
+      }
+    },
+    "Course_Skill_Info": {
+      "domain": "skill_matrix",
+      "label": "能力与培训的桥接表",
+      "aliases": [
+        "Course_Skill_Info",
+        "能力与培训的桥接表",
+        "能力与培训的桥接"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "SkillId": [
+          "SkillId",
+          "能力Id"
+        ],
+        "SkillLevelId": [
+          "完成课程可以达到的能力等级",
+          "SkillLevelId"
+        ],
+        "ObjectType": [
+          "0 线上课程 1线下课程",
+          "ObjectType"
+        ],
+        "ObjectId": [
+          "ObjectId",
+          "课程Id"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "自增长",
+          "序号"
+        ],
+        "CreatorId": [
+          "CreatorId",
+          "创建人Id"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ]
+      }
+    },
+    "Student_Skill_History_Info": {
+      "domain": "skill_matrix",
+      "label": "能力变更日志表",
+      "aliases": [
+        "Student_Skill_History_Info",
+        "能力变更日志表",
+        "能力变更日志"
+      ],
+      "fields": {
+        "Id": [
+          "ID",
+          "Id",
+          "主键",
+          "编号"
+        ],
+        "StudentId": [
+          "StudentId",
+          "学员Id",
+          "学员编号",
+          "人员",
+          "员工",
+          "学员"
+        ],
+        "SkillId": [
+          "SkillId",
+          "技能Id"
+        ],
+        "SkillLevelIId": [
+          "SkillLevelIId",
+          "技能等级Id"
+        ],
+        "ObjectType": [
+          "0 线上课程 1线下课程",
+          "ObjectType"
+        ],
+        "ObjectId": [
+          "ObjectId",
+          "课程Id"
+        ],
+        "SerialNo": [
+          "SerialNo",
+          "排序号",
+          "自增长",
+          "序号"
+        ],
+        "CreateTime": [
+          "CreateTime",
+          "创建时间",
+          "发布时间"
+        ]
+      }
+    }
+  },
+  "operators": {
+    "list": [
+      "查询",
+      "列出",
+      "显示",
+      "查看",
+      "明细",
+      "记录"
+    ],
+    "count": [
+      "数量",
+      "总数",
+      "多少",
+      "几条",
+      "几人",
+      "几门",
+      "几个"
+    ],
+    "sum": [
+      "合计",
+      "总和",
+      "累计",
+      "总计"
+    ],
+    "avg": [
+      "平均",
+      "均值"
+    ],
+    "max": [
+      "最大",
+      "最高",
+      "最多"
+    ],
+    "min": [
+      "最小",
+      "最低",
+      "最少"
+    ],
+    "group": [
+      "按",
+      "每个",
+      "各个",
+      "各",
+      "分别"
+    ],
+    "top_n": [
+      "前",
+      "排名",
+      "top"
+    ]
+  },
+  "time": {
+    "today": [
+      "今天",
+      "今日"
+    ],
+    "yesterday": [
+      "昨天",
+      "昨日"
+    ],
+    "this_month": [
+      "本月",
+      "这个月"
+    ],
+    "last_month": [
+      "上月",
+      "上个月"
+    ],
+    "this_year": [
+      "今年",
+      "本年度"
+    ],
+    "last_year": [
+      "去年",
+      "上一年度"
+    ]
+  },
+  "entities": {
+    "person_name": {
+      "table": "Student_Info",
+      "field": "ActualName",
+      "aliases": [
+        "姓名",
+        "真实姓名",
+        "学员姓名",
+        "员工姓名",
+        "人员姓名"
+      ],
+      "sample_values": [
+        "张三",
+        "李四",
+        "王五",
+        "赵敏",
+        "陈晨",
+        "刘洋",
+        "周宁",
+        "吴桐"
+      ]
+    },
+    "user_name": {
+      "table": "Student_Info",
+      "field": "Name",
+      "aliases": [
+        "用户名",
+        "登录名",
+        "学员账号",
+        "登录账号",
+        "账号",
+        "账户"
+      ],
+      "sample_values": [
+        "zhangsan",
+        "lisi",
+        "wangwu",
+        "user001"
+      ]
+    },
+    "course_name": {
+      "table": "Course_Info",
+      "field": "Name",
+      "aliases": [
+        "课程名称",
+        "课程"
+      ],
+      "sample_values": [
+        "年度培训",
+        "安全生产",
+        "新员工入职",
+        "管理能力提升"
+      ]
+    },
+    "study_class_name": {
+      "table": "Study_Class_Info",
+      "field": "Name",
+      "aliases": [
+        "学习班名称",
+        "学习班",
+        "培训班"
+      ],
+      "sample_values": [
+        "2026新员工班",
+        "安全生产班",
+        "管理提升班"
+      ]
+    },
+    "department_name": {
+      "table": "Student_Info",
+      "field": "Department",
+      "aliases": [
+        "部门",
+        "所属部门"
+      ],
+      "sample_values": [
+        "研发部",
+        "培训部",
+        "人力资源部",
+        "生产部"
+      ]
+    },
+    "offtrain_name": {
+      "table": "OffTrain_Info",
+      "field": "Name",
+      "aliases": [
+        "面授课程",
+        "线下培训",
+        "线下课程"
+      ],
+      "sample_values": [
+        "现场安全培训",
+        "管理人员面授班",
+        "应急演练"
+      ]
+    },
+    "skill_name": {
+      "table": "Skill_Info",
+      "field": "Name",
+      "aliases": [
+        "能力名称",
+        "技能名称",
+        "能力",
+        "技能"
+      ],
+      "sample_values": [
+        "沟通能力",
+        "项目管理",
+        "安全操作",
+        "数据分析"
+      ]
+    }
+  }
+}

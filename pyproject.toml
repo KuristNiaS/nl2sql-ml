@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nl2sql-ml"
+version = "0.6.0"
+description = "Schema-aware Chinese NL2SQL for SQL Server using classic machine learning"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=2.0,<3",
+  "pandas>=2.2,<3",
+  "scikit-learn>=1.6,<2",
+  "scipy>=1.14,<2",
+  "joblib>=1.4,<2",
+  "matplotlib>=3.8,<4",
+  "python-docx>=1.1,<2"
+]
+
+[project.scripts]
+nl2sql-ml = "nl2sql_ml.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["nl2sql_ml*"]

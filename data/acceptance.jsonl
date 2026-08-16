@@ -1,0 +1,82 @@
+{"id":"account-01","domain":"account","question":"查询学员记录","expected":{"table":"Student_Info","intent":"list","aggregation":null}}
+{"id":"account-02","domain":"account","question":"统计部门数量","expected":{"table":"Department","intent":"count","aggregation":"count"}}
+{"id":"account-03","domain":"account","question":"查询本月创建的岗位","expected":{"table":"Duty_Info","intent":"list","time_field":"CreateTime"}}
+{"id":"question-01","domain":"question_bank","question":"查询题型明细","expected":{"table":"tm_tx","intent":"list"}}
+{"id":"question-02","domain":"question_bank","question":"统计题库集数量","expected":{"table":"tk_tkj","intent":"count","aggregation":"count"}}
+{"id":"question-03","domain":"question_bank","question":"按题目的题型ID统计题目数量","expected":{"table":"tk001","intent":"group_aggregate","aggregation":"count","dimension_column":"Tm_tx_ID"}}
+{"id":"exam-01","domain":"exam","question":"查询考试成绩记录","expected":{"table":"clerk_kscj","intent":"list"}}
+{"id":"exam-02","domain":"exam","question":"统计考试报名数量","expected":{"table":"Exam_Apply","intent":"count","aggregation":"count"}}
+{"id":"exam-03","domain":"exam","question":"查询考试成绩的平均成绩","expected":{"table":"clerk_kscj","intent":"aggregate","aggregation":"avg","metric_column":"Cj"}}
+{"id":"exam-04","domain":"exam","question":"查询状态为1的考试报名记录","expected":{"table":"Exam_Apply","intent":"list","filters":{"Status":1}}}
+{"id":"training-01","domain":"training","question":"查询课程记录","expected":{"table":"Course_Info","intent":"list"}}
+{"id":"training-02","domain":"training","question":"按状态统计学习班数量","expected":{"table":"Study_Class_Info","intent":"group_aggregate","aggregation":"count","dimension_column":"Status"}}
+{"id":"training-03","domain":"training","question":"查询课程的平均学分","expected":{"table":"Course_Info","intent":"aggregate","aggregation":"avg","metric_column":"CreditHour"}}
+{"id":"training-04","domain":"training","question":"查询课程学分最高的前5个课程名称","expected":{"table":"Course_Info","intent":"top_n","aggregation":"sum","metric_column":"CreditHour","dimension_column":"Name","limit":5,"order":"desc"}}
+{"id":"forum-01","domain":"forum","question":"查询论坛版块记录","expected":{"table":"BBSBoardInfo","intent":"list"}}
+{"id":"forum-02","domain":"forum","question":"统计论坛主题数量","expected":{"table":"BBSTopicInfo","intent":"count","aggregation":"count"}}
+{"id":"forum-03","domain":"forum","question":"查询回帖记录","expected":{"table":"BBSReplayInfo","intent":"list"}}
+{"id":"configuration-01","domain":"configuration","question":"查询企业用户配置记录","expected":{"table":"User_Option_Info","intent":"list"}}
+{"id":"configuration-02","domain":"configuration","question":"统计企业用户配置数量","expected":{"table":"User_Option_Info","intent":"count","aggregation":"count"}}
+{"id":"configuration-03","domain":"configuration","question":"按类型统计企业用户配置数量","expected":{"table":"User_Option_Info","intent":"group_aggregate","aggregation":"count","dimension_column":"Type"}}
+{"id":"notification-01","domain":"notification","question":"查询Email邮件记录","expected":{"table":"Email_Info","intent":"list"}}
+{"id":"notification-02","domain":"notification","question":"统计站内邮件收件人信息数量","expected":{"table":"Sys_Mail_Receivers_Info","intent":"count","aggregation":"count"}}
+{"id":"notification-03","domain":"notification","question":"查询站内邮件记录","expected":{"table":"Sys_Mail_Info","intent":"list"}}
+{"id":"system-01","domain":"system","question":"查询角色记录","expected":{"table":"Role_Info","intent":"list"}}
+{"id":"system-02","domain":"system","question":"统计系统权限数量","expected":{"table":"Sys_Access_Info","intent":"count","aggregation":"count"}}
+{"id":"system-03","domain":"system","question":"查询本月创建的群组","expected":{"table":"Group_Info","intent":"list","time_field":"CreateTime"}}
+{"id":"news-01","domain":"news","question":"查询新闻资讯记录","expected":{"table":"News_Info","intent":"list"}}
+{"id":"news-02","domain":"news","question":"统计新闻栏目数量","expected":{"table":"News_Type_Info","intent":"count","aggregation":"count"}}
+{"id":"news-03","domain":"news","question":"按栏目类型标识统计新闻资讯数量","expected":{"table":"News_Info","intent":"group_aggregate","aggregation":"count","dimension_column":"NewsTypeId"}}
+{"id":"evaluation-01","domain":"evaluation","question":"查询考评活动记录","expected":{"table":"Evaluation","intent":"list"}}
+{"id":"evaluation-02","domain":"evaluation","question":"统计考评活动专家数量","expected":{"table":"Evaluation_Expert","intent":"count","aggregation":"count"}}
+{"id":"evaluation-03","domain":"evaluation","question":"按状态统计评分记录数量","expected":{"table":"Evaluation_Result","intent":"group_aggregate","aggregation":"count","dimension_column":"Status"}}
+{"id":"game-01","domain":"game","question":"查询闯关游戏主题记录","expected":{"table":"GameInfo","intent":"list"}}
+{"id":"game-02","domain":"game","question":"统计闯关游戏参加人员安排数量","expected":{"table":"GameArrangeInfo","intent":"count","aggregation":"count"}}
+{"id":"game-03","domain":"game","question":"按状态统计员工游戏情况数量","expected":{"table":"GameStudentInfo","intent":"group_aggregate","aggregation":"count","dimension_column":"Status"}}
+{"id":"skill-01","domain":"skill_matrix","question":"查询能力记录","expected":{"table":"Skill_Info","intent":"list"}}
+{"id":"skill-02","domain":"skill_matrix","question":"统计能力等级数量","expected":{"table":"Skill_Level_Info","intent":"count","aggregation":"count"}}
+{"id":"skill-03","domain":"skill_matrix","question":"按评定来源统计员工能力数量","expected":{"table":"Student_Skill_Info","intent":"group_aggregate","aggregation":"count","dimension_column":"SourceType"}}
+{"id":"skill-04","domain":"skill_matrix","question":"查询本月能力变更日志","expected":{"table":"Student_Skill_History_Info","intent":"list","time_field":"CreateTime"}}
+{"id":"complex-01","domain":"exam","question":"查询张三所有的考试报名记录","expected":{"table":"Exam_Apply","intent":"list","filters":{"Student_Info.ActualName":"张三"},"join_tables":["Student_Info"],"join_count":1,"sql_contains":["INNER JOIN [Student_Info]","[t1].[ActualName] = ?"]}}
+{"id":"complex-02","domain":"exam","question":"查询李四的考试成绩","expected":{"table":"clerk_kscj","intent":"list","filters":{"Student_Info.ActualName":"李四"},"join_tables":["Exam_Start","Student_Info"],"join_count":2}}
+{"id":"complex-03","domain":"exam","question":"按部门统计考试报名数量","expected":{"table":"Exam_Apply","intent":"group_aggregate","aggregation":"count","dimension_column":"Department","dimension_table":"Student_Info","join_tables":["Student_Info"]}}
+{"id":"complex-04","domain":"exam","question":"查询本月张三状态为1的考试报名记录","expected":{"table":"Exam_Apply","intent":"list","filters":{"Exam_Apply.Status":1,"Student_Info.ActualName":"张三"},"time_field":"CreateTime","join_tables":["Student_Info"]}}
+{"id":"complex-05","domain":"account","question":"查询研发部所有学员","expected":{"table":"Student_Info","intent":"list","filters":{"Student_Info.Department":"研发部"},"join_count":0}}
+{"id":"complex-06","domain":"training","question":"查询参加年度培训课程的学员名单","expected":{"table":"Student_Info","intent":"list","filters":{"Course_Info.Name":"年度培训"},"join_tables":["Course_Info","Student_CourseInfo"],"join_count":2}}
+{"id":"complex-07","domain":"training","question":"查询张三参加的学习班","expected":{"table":"Study_Class_Info","intent":"list","filters":{"Student_Info.ActualName":"张三"},"join_tables":["Student_Info","Study_Class_Student_Info"],"join_count":2}}
+{"id":"complex-08","domain":"skill_matrix","question":"查询姓名为王五的员工能力记录","expected":{"table":"Student_Skill_Info","intent":"list","filters":{"Student_Info.ActualName":"王五"},"join_tables":["Student_Info"]}}
+{"id":"complex-09","domain":"game","question":"按部门统计员工游戏情况数量","expected":{"table":"GameStudentInfo","intent":"group_aggregate","aggregation":"count","dimension_column":"Department","dimension_table":"Student_Info","join_tables":["Student_Info"]}}
+{"id":"complex-10","domain":"skill_matrix","question":"查询部门为培训部的能力变更日志","expected":{"table":"Student_Skill_History_Info","intent":"list","filters":{"Student_Info.Department":"培训部"},"join_tables":["Student_Info"]}}
+{"id":"complex-11","domain":"training","question":"查询课程名称为安全生产的学员学习课程日志","expected":{"table":"Student_Course_Log","intent":"list","filters":{"Course_Info.Name":"安全生产"},"join_tables":["Course_Info"]}}
+{"id":"complex-12","domain":"training","question":"查询用户名为zhangsan的积分日志","expected":{"table":"Student_Point_Log","intent":"list","filters":{"Student_Info.Name":"zhangsan"},"join_tables":["Student_Info"]}}
+{"id":"complex-13","domain":"training","question":"查询去年部门为生产部的面授课程讨论信息","expected":{"table":"OffTrain_Discuss_Info","intent":"list","filters":{"Student_Info.Department":"生产部"},"time_field":"CreateTime","join_tables":["Student_Info"]}}
+{"id":"complex-14","domain":"game","question":"按真实姓名统计闯关游戏参加人员数量","expected":{"table":"GameArrangeInfo","intent":"group_aggregate","aggregation":"count","dimension_column":"ActualName","dimension_table":"Student_Info","join_tables":["Student_Info"]}}
+{"id":"complex-15","domain":"training","question":"查询学员姓名为陈晨的学员课件学习记录","expected":{"table":"Student_Courseware_Info","intent":"list","filters":{"Student_Info.ActualName":"陈晨"},"join_tables":["Student_Info"]}}
+{"id":"complex-16","domain":"training","question":"查询学习班名称为管理提升班的学习班报名申请记录","expected":{"table":"Study_Class_Apply_Info","intent":"list","filters":{"Study_Class_Info.Name":"管理提升班"},"join_tables":["Study_Class_Info"]}}
+{"id":"complex-17","domain":"training","question":"查询线下培训为应急演练的学员离线学习班学习记录","expected":{"table":"Student_OffTrain_Info","intent":"list","filters":{"OffTrain_Info.Name":"应急演练"},"join_tables":["OffTrain_Info"]}}
+{"id":"complex-18","domain":"skill_matrix","question":"查询能力名称为数据分析的员工能力记录","expected":{"table":"Student_Skill_Info","intent":"list","filters":{"Skill_Info.Name":"数据分析"},"join_tables":["Skill_Info"]}}
+{"id":"complex-19","domain":"training","question":"按课程名称统计课程选修情况设定数量","expected":{"table":"Elective_Info","intent":"group_aggregate","aggregation":"count","dimension_column":"Name","dimension_table":"Course_Info","join_tables":["Course_Info"]}}
+{"id":"complex-20","domain":"exam","question":"查询近30天学员姓名为赵敏且状态为1的考试报名记录","expected":{"table":"Exam_Apply","intent":"list","filters":{"Exam_Apply.Status":1,"Student_Info.ActualName":"赵敏"},"time_field":"CreateTime","join_tables":["Student_Info"]}}
+{"id":"complex-21","domain":"exam","question":"考试报名数量排名前5的部门","expected":{"table":"Exam_Apply","intent":"top_n","aggregation":"count","dimension_column":"Department","dimension_table":"Student_Info","limit":5,"join_tables":["Student_Info"]}}
+{"id":"complex-22","domain":"training","question":"查询张三参加的课程","expected":{"table":"Course_Info","intent":"list","filters":{"Student_Info.ActualName":"张三"},"join_tables":["Student_CourseInfo","Student_Info"],"join_count":2}}
+{"id":"complex-23","domain":"system","question":"查询学员姓名为刘洋的学员获取证书记录","expected":{"table":"Student_Certificate_Info","intent":"list","filters":{"Student_Info.ActualName":"刘洋"},"join_tables":["Student_Info"]}}
+{"id":"report-01","domain":"training","question":"2026年度各部门一至十二月份人均学习时长横向对比","expected":{"report_type":"department_monthly_per_capita_learning_hours","table":"Student_Course_Log","intent":"cross_tab","aggregation":"per_capita_hours","dimension_column":"Department","dimension_table":"Student_Info","date_start":"2026-01-01","date_end":"2027-01-01","filters":{"Student_Info.Status":1},"join_tables":["Student_Info"],"sql_contains":["LEFT JOIN [Student_Course_Log]","COUNT(DISTINCT [s].[Id])","[1月人均学习时长_小时]","[12月人均学习时长_小时]"]}}
+{"id":"report-02","domain":"training","question":"2025年不同部门每个月平均每人培训学时趋势报表","expected":{"report_type":"department_monthly_per_capita_learning_hours","intent":"cross_tab","date_start":"2025-01-01","date_end":"2026-01-01","metric_unit":"hour"}}
+{"id":"report-03","domain":"training","question":"各部门2024全年逐月员工人均课程学习时间对比表","expected":{"report_type":"department_monthly_per_capita_learning_hours","intent":"cross_tab","date_start":"2024-01-01","date_end":"2025-01-01","secondary_dimension":"MONTH(Student_Course_Log.BeginTime)"}}
+{"id":"report-04","domain":"training","question":"2023年度按部门月度每人平均学习用时汇总","expected":{"report_type":"department_monthly_per_capita_learning_hours","intent":"cross_tab","date_start":"2023-01-01","date_end":"2024-01-01","aggregation":"per_capita_hours"}}
+{"id":"report-05","domain":"training","question":"2026年度各部门每月学习时长中位数对比","expected":{"error_contains":"当前没有匹配到已审核的KPI规则"}}
+{"id":"score-01","domain":"exam","question":"2026年张三和李四各自在线性代数中取得的最高分","expected":{"report_type":"student_exam_score_aggregate","fact":"exam_score","table":"clerk_kscj","intent":"group_aggregate","aggregation":"max","metric_column":"Cj","dimension_column":"ActualName","date_start":"2026-01-01","date_end":"2027-01-01","filters":{"Student_Info.ActualName":["张三","李四"],"Course_Info.Name":"线性代数","clerk_kscj.Clerk_ks_status":1},"join_tables":["Course_Info","Exam_Start","Student_Info","tk_cl"],"join_count":4,"sql_contains":["MAX([k].[Cj])","[s].[ActualName] IN (?, ?)","CONVERT(varchar(50), [p].[SiteID]) = [c].[Id]","[p].[SiteType] IN (1, 3)"]}}
+{"id":"score-02","domain":"exam","question":"查询2025年度王五与赵敏分别在高等数学课程中的最低成绩","expected":{"report_type":"student_exam_score_aggregate","aggregation":"min","date_start":"2025-01-01","date_end":"2026-01-01","filters":{"Student_Info.ActualName":["王五","赵敏"],"Course_Info.Name":"高等数学"},"sql_contains":["MIN([k].[Cj])","[min_score]"]}}
+{"id":"score-03","domain":"exam","question":"统计张三、李四以及王五各人2024全年在课程名称为数据分析的考试中的平均分","expected":{"report_type":"student_exam_score_aggregate","aggregation":"avg","filters":{"Student_Info.ActualName":["张三","李四","王五"],"Course_Info.Name":"数据分析"},"sql_contains":["AVG([k].[Cj])","IN (?, ?, ?)"]}}
+{"id":"score-04","domain":"exam","question":"2026年张三和李四各自最高分","expected":{"report_type":"student_exam_score_aggregate","aggregation":"max","join_tables":["Exam_Start","Student_Info"],"join_count":2,"date_start":"2026-01-01","date_end":"2027-01-01"}}
+{"id":"score-05","domain":"exam","question":"2026年张三和李四在线性代数中的最高分","expected":{"error_contains":"没有明确是分别统计还是合并统计"}}
+{"id":"score-06","domain":"system","question":"查询量子涨落熵系数","expected":{"error_contains":"目标事实表无法可靠识别"}}
+{"id":"ranking-01","domain":"exam","question":"2026年所有课程平均成绩最高的10个学生","expected":{"report_type":"student_exam_score_ranking","fact":"exam_score","table":"clerk_kscj","intent":"top_n","aggregation":"avg","metric_column":"Cj","dimension_column":"ActualName","limit":10,"order":"desc","date_start":"2026-01-01","date_end":"2027-01-01","filters":{"clerk_kscj.Clerk_ks_status":1},"join_tables":["Course_Info","Exam_Start","Student_Info","tk_cl"],"join_count":4,"sql_contains":["SELECT TOP (10)","AVG([k].[Cj]) AS [avg_score]","[p].[SiteType] IN (1, 3)","ORDER BY [avg_score] DESC"]}}
+{"id":"ranking-02","domain":"exam","question":"2026年研发部所有课程平均成绩最高的10个学生","expected":{"report_type":"student_exam_score_ranking","aggregation":"avg","limit":10,"filters":{"Student_Info.Department":"研发部","clerk_kscj.Clerk_ks_status":1},"sql_contains":["[s].[Department] = ?","GROUP BY [s].[Id], [s].[ActualName]"]}}
+{"id":"ranking-03","domain":"exam","question":"2025年度高等数学平均分最低的5名学员","expected":{"report_type":"student_exam_score_ranking","aggregation":"avg","limit":5,"order":"asc","filters":{"Course_Info.Name":"高等数学"},"sql_contains":["SELECT TOP (5)","ORDER BY [avg_score] ASC"]}}
+{"id":"ranking-04","domain":"exam","question":"2023年全部考试平均成绩排行榜前10名学员","expected":{"report_type":"student_exam_score_ranking","aggregation":"avg","limit":10,"join_tables":["Exam_Start","Student_Info"],"join_count":2,"sql_contains":["AVG([k].[Cj])","ORDER BY [avg_score] DESC"]}}
+{"id":"ranking-05","domain":"exam","question":"2026年数学专业所有课程平均成绩最高的10个学生","expected":{"error_contains":"Student_Info学员表没有专业字段"}}
+{"id":"ranking-06","domain":"exam","question":"2026年一年级所有课程平均成绩前10名学生","expected":{"error_contains":"Student_Info学员表没有年级字段"}}
+{"id":"ranking-07","domain":"exam","question":"2026年软件学院全部课程平均分最高的5个学员","expected":{"error_contains":"Student_Info学员表没有学院字段"}}
+{"id":"ranking-08","domain":"exam","question":"2026年三班所有课程平均成绩排名前10的学生","expected":{"error_contains":"Student_Info学员表没有班级字段"}}
+{"id":"ambiguity-01","domain":"training","question":"陈晨的课件学习记录有哪些","expected":{"error_contains":"课件学习记录”在设计书中存在两种口径"}}

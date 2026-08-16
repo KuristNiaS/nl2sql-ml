@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "facts": {
+    "exam_score": {
+      "label": "考试成绩事实",
+      "grain": "每名学员的每次已完成考试记录",
+      "base_table": "clerk_kscj",
+      "time": {
+        "table": "clerk_kscj",
+        "field": "clerk_ks_btime"
+      },
+      "measures": {
+        "score": {
+          "table": "clerk_kscj",
+          "field": "Cj",
+          "allowed_aggregations": ["max", "min", "avg"]
+        }
+      },
+      "dimensions": {
+        "student": {
+          "table": "Student_Info",
+          "key": "Id",
+          "label_field": "ActualName",
+          "attributes": {
+            "department": "Department"
+          },
+          "unsupported_attributes": {
+            "major": "设计书中的Student_Info没有专业字段",
+            "grade": "设计书中的Student_Info没有年级字段",
+            "college": "设计书中的Student_Info没有学院字段",
+            "class": "设计书中的Student_Info没有班级字段"
+          }
+        },
+        "course": {
+          "table": "Course_Info",
+          "key": "Id",
+          "label_field": "Name"
+        }
+      },
+      "relationships": [
+        {
+          "left_table": "clerk_kscj",
+          "left_field": "ExamStartId",
+          "right_table": "Exam_Start",
+          "right_field": "Id",
+          "kind": "inner"
+        },
+        {
+          "left_table": "Exam_Start",
+          "left_field": "StudentId",
+          "right_table": "Student_Info",
+          "right_field": "Id",
+          "kind": "inner"
+        },
+        {
+          "left_table": "clerk_kscj",
+          "left_field": "Tk_cl_id",
+          "right_table": "tk_cl",
+          "right_field": "Tk_cl_id",
+          "kind": "inner"
+        },
+        {
+          "left_table": "tk_cl",
+          "left_field": "SiteID",
+          "right_table": "Course_Info",
+          "right_field": "Id",
+          "kind": "converted_inner",
+          "left_conversion": "varchar(50)",
+          "conditions": {
+            "tk_cl.SiteType": [1, 3]
+          }
+        }
+      ],
+      "row_filters": [
+        {
+          "table": "clerk_kscj",
+          "field": "Clerk_ks_status",
+          "operator": "=",
+          "value": 1,
+          "meaning": "只统计已完成考试"
+        },
+        {
+          "table": "clerk_kscj",
+          "field": "Cj",
+          "operator": "IS NOT NULL"
+        }
+      ],
+      "assumptions": [
+        "SiteType=1表示学习班课程结业考试，SiteType=3表示课程完成考试",
+        "tk_cl.SiteID按设计书解释为课程ID；由于SiteID为int而Course_Info.Id为varchar，关联时把SiteID转换为varchar(50)",
+        "通过ExamStartId关联学员会排除没有开考记录的手工或导入成绩"
+      ]
+    }
+  }
+}
